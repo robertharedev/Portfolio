@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+
+    font-family: "Consolas", "Courier New", monospace;
+}
+
+body {
+
+}
+
+header {
+    height: 100vh;
+    background-color: aqua;
+}
+
+.heading-container {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    background-color: red;
+}
