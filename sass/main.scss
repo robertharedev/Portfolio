@@ -94,13 +94,9 @@ header {
     position: absolute;
     top: 40%;
     left: 10%;
-    text-decoration-thickness: 0.3em;
     
     #heading-firstword {
         float: left;
-        text-decoration-line: underline;
-        text-decoration-style: wavy;
-        text-decoration-color: $sec-colour;
 
         h1 {
             font-size: 8em;
@@ -111,9 +107,6 @@ header {
     
     #heading-secondword {
         float: left;
-        text-decoration-line: underline;
-        text-decoration-style: wavy;
-        text-decoration-color: $sec-colour;
 
         h1 {
             font-size: 8em;
