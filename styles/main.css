@@ -60,7 +60,8 @@ header {
     border-radius: 5px; /* dunno if i want this yet */
 }
 
-@media screen and (max-width: 721px) {
+/* If the screen size is 720px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 720px) {
     #main-menu ul li a {
         font-size: 4vw;
     }
