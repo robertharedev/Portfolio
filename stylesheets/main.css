@@ -3,9 +3,12 @@
   margin: 0px;
   padding: 0px;
   border: 0px;
+}
+
+html {
   box-sizing: border-box;
   font-family: "Inconsolata", monospace;
-  font-size: 16px;
+  font-size: calc(1em + 1vw);
 }
 
 /* BODY #########################################################################################*/
@@ -25,14 +28,13 @@ body::-webkit-scrollbar {
 
 /* HEADER #########################################################################################*/
 header {
-  height: 10%;
-  width: 100%;
-  position: relative;
+  height: 10vh;
+  width: 100vw;
+  display: table-cell;
+  vertical-align: middle;
   /* NAV #########################################################################################*/
 }
 header #main-menu {
-  width: 100%;
-  height: 10%;
   text-align: center;
 }
 header #main-menu ul {
@@ -40,16 +42,14 @@ header #main-menu ul {
 }
 header #main-menu ul li {
   list-style-type: none;
-  padding: 20px 10px;
+  padding: 0px 10px;
   float: left;
 }
 header #main-menu ul li a {
   text-decoration: none;
   color: #17191B;
-  font-size: 1.2em;
-  padding: 2px 5px;
-  border-radius: 5px;
-  /* dunno if i want this yet */
+  font-size: 0.8em;
+  padding: 0.1em 0.2em;
 }
 header #main-menu ul li a:hover {
   background-color: #E12D38;
@@ -60,34 +60,18 @@ header #main-menu ul li a:active {
   color: #FFFEFC;
 }
 
-/* If the screen size is 720px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 500px) {
-  #main-menu ul li a {
-    font-size: 4vw;
-  }
-
-  .content-heading #heading-firstword {
-    font-size: 3vw;
-  }
-  .content-heading #heading-secondword {
-    font-size: 3vw;
-  }
-}
 /* MAIN CONTENT #########################################################################################*/
 /* MAIN HEADING #########################################################################################*/
 .content-heading {
-  margin: -5em auto auto;
-  width: 80%;
+  width: 100%;
+  height: 90vh;
   text-align: left;
-  position: absolute;
-  top: 40%;
-  left: 10%;
 }
 .content-heading #heading-firstword {
   float: left;
 }
 .content-heading #heading-firstword h1 {
-  font-size: 8em;
+  /*font-size: 8em;*/
   font-weight: lighter;
   color: #17191B;
 }
@@ -95,7 +79,7 @@ header #main-menu ul li a:active {
   float: left;
 }
 .content-heading #heading-secondword h1 {
-  font-size: 8em;
+  /*font-size: 8em;*/
   font-weight: lighter;
   color: #E12D38;
 }
@@ -104,9 +88,9 @@ header #main-menu ul li a:active {
 footer {
   margin: auto;
   position: absolute;
-  bottom: 0;
+  top: 100vh;
   width: 100%;
-  height: 10em;
+  height: 10vh;
   background-color: darkgreen;
 }
 
