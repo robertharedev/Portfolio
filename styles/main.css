@@ -28,7 +28,7 @@ body::-webkit-scrollbar {
 
 /* HEADER #########################################################################################*/
 header {
-    height: 10vh;
+    height: 10%;
     position: relative;
 }
 
@@ -36,40 +36,43 @@ header {
 #main-menu {
     text-align: center;
     position: relative;
-    height: 100%;
+    height: 10%;
 }
 
 #main-menu ul {
+    text-align: center;
     display: inline-block;
     list-style-type: none;
     overflow: hidden;
+    padding: 20px;
 }
 
 #main-menu ul li {
     float: left;
-    padding: 20px 2vw;
+    padding: 0px 2vw;
 }
 
 #main-menu ul li a {
     text-decoration: none;
     color: var(--prim-font-colour);
     font-size: 1.2em;
+    padding: 2px 5px;
 }
 
 #main-menu ul li a:hover {
     background-color: var(--sec-font-colour);
-    color: var(--prim-font-colour);
+    color: var(--white-colour);
 }
 
 /* MAIN CONTENT #########################################################################################*/
 /* MAIN HEADING #########################################################################################*/
 .content-heading {
     margin: -5em auto auto;
-    width: 80vw;
+    width: 80%;
     text-align: left;
     position: absolute;
-    top: 40vh;
-    left: 10vw;
+    top: 40%;
+    left: 10%;
 }
 
 .content-heading #heading-firstname {
@@ -98,6 +101,6 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5em;
-    background-color: dimgrey;
+    height: 10em;
+    background-color: aqua;
 }
