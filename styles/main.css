@@ -8,6 +8,7 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
+    box-sizing: border-box;
 
     font-family: 'Inconsolata', monospace;
     font-size: 16px;
@@ -19,6 +20,7 @@ body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     background-color: var(--white-colour);
+    min-height: 100vh;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -41,7 +43,7 @@ header {
 }
 
 #main-menu ul {
-    display: inline-block;
+    display: inline-flex;
 }
 
 #main-menu ul li {
@@ -55,10 +57,22 @@ header {
     color: var(--prim-font-colour);
     font-size: 1.2em;
     padding: 2px 5px;
+    border-radius: 5px; /* dunno if i want this yet */
+}
+
+@media screen and (max-width: 721px) {
+    #main-menu ul li a {
+        font-size: 4vw;
+    }
 }
 
 #main-menu ul li a:hover {
     background-color: var(--sec-font-colour);
+    color: var(--white-colour);
+}
+
+#main-menu ul li a:active {
+    background-color: var(--prim-font-colour);
     color: var(--white-colour);
 }
 
