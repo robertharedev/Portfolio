@@ -29,6 +29,7 @@ body::-webkit-scrollbar {
 /* HEADER #########################################################################################*/
 header {
     height: 10%;
+    width: 100%;
     position: relative;
 }
 
@@ -45,6 +46,7 @@ header {
     list-style-type: none;
     overflow: hidden;
     padding: 20px;
+    background-color: yellow;
 }
 
 #main-menu ul li {
@@ -75,21 +77,21 @@ header {
     left: 10%;
 }
 
-.content-heading #heading-firstname {
+.content-heading #heading-firstword {
     float: left;
 }
 
-.content-heading #heading-firstname h1 {
+.content-heading #heading-firstword h1 {
     font-size: 7em;
     font-weight: lighter;
     color: var(--prim-font-colour);
 }
 
-.content-heading #heading-lastname {
+.content-heading #heading-secondword {
     float: left;
 }
 
-.content-heading #heading-lastname h1 {
+.content-heading #heading-secondword h1 {
     font-size: 7em;
     font-weight: lighter;
     color: var(--sec-font-colour);
