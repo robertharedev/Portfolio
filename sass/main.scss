@@ -1,5 +1,6 @@
-$prim-font-colour: #17191B;
-$sec-font-colour: #E12D38;
+$prim-colour: #17191B;
+$sec-colour: #E12D38;
+$sec-active-colour: #ac212b; /*colour for active buttons*/
 $white-colour: #FFFEFC;
 
 * {
@@ -16,7 +17,7 @@ body {
     /* Hide scrollbar but keep functionality */
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    background-color: var($white-colour);
+    background-color: $white-colour;
     min-height: 100vh;
 
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -47,18 +48,18 @@ header {
 
                 a {
                     text-decoration: none;
-                    color: $prim-font-colour;
+                    color: $prim-colour;
                     font-size: 1.2em;
                     padding: 2px 5px;
                     border-radius: 5px; /* dunno if i want this yet */
 
                     &:hover {
-                        background-color: $sec-font-colour;
+                        background-color: $sec-colour;
                         color: $white-colour;
                     }
     
                     &:active {
-                        background-color: $prim-font-colour;
+                        background-color: $sec-active-colour;
                         color: $white-colour;
                     }
                 }
@@ -90,7 +91,7 @@ header {
         h1 {
             font-size: 7em;
             font-weight: lighter;
-            color: $prim-font-colour;
+            color: $prim-colour;
         }
     }
 
@@ -100,7 +101,7 @@ header {
         h1 {
             font-size: 7em;
             font-weight: lighter;
-            color: $sec-font-colour;
+            color: $sec-colour;
         }
     }
 }
