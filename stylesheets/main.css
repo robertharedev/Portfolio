@@ -42,7 +42,7 @@ header #main-menu ul {
 }
 header #main-menu ul li {
   list-style-type: none;
-  padding: 0px 10px;
+  padding: 20px 0.5em;
   float: left;
 }
 header #main-menu ul li a {
@@ -66,7 +66,6 @@ header #main-menu ul li a:active {
   width: 100%;
   height: 90vh;
   text-align: left;
-  background-color: aqua;
 }
 .content-heading #heading-firstword {
   float: left;
