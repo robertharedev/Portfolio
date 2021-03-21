@@ -3,10 +3,11 @@
     padding: 0px;
     border: 0px;
 
-    font-family: "Consolas", monospace;
+    font-family: 'Inconsolata', 'Consolas', 'Courier New', monospace;
     font-size: 16px;
 }
 
+/* BODY #########################################################################################*/
 body {
     /* Hide scrollbar but keep functionality */
     -ms-overflow-style: none;  /* IE and Edge */
@@ -18,15 +19,13 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-h1 {
-    font-size: 8em;
-}
-
+/* HEADER #########################################################################################*/
 header {
     height: 10vh;
     position: relative;
 }
 
+/* NAV #########################################################################################*/
 #main-menu {
     text-align: center;
     position: relative;
@@ -42,13 +41,14 @@ header {
 
 #main-menu ul li {
     float: left;
-    padding: 30px;
+    padding: 20px 2vw;
 }
 
 #main-menu ul li a {
     text-decoration: none;
     color: black;
     font-size: 1.2em;
+
 }
 
 #main-menu ul li a:hover {
@@ -56,16 +56,23 @@ header {
     color: black;
 }
 
+/* MAIN CONTENT #########################################################################################*/
 .content-heading {
     margin: -5em auto auto;
     width: 50%;
     text-align: left;
     background-color: red;
     position: absolute;
-    top: 40%;
-    left: 20%;
+    top: 40vh;
+    left: 10vw;
 }
 
+.content-heading h1 {
+    font-size: 7em;
+    font-weight: lighter;
+}
+
+/* FOOTER #########################################################################################*/
 footer {
     position: absolute;
     bottom: 0;
