@@ -66,6 +66,7 @@ header #main-menu ul li a:active {
   width: 100%;
   height: 90vh;
   text-align: left;
+  background-color: aqua;
 }
 .content-heading #heading-firstword {
   float: left;
