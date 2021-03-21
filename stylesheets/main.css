@@ -61,9 +61,16 @@ header #main-menu ul li a:active {
 }
 
 /* If the screen size is 720px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 500px) {
   #main-menu ul li a {
     font-size: 4vw;
+  }
+
+  .content-heading #heading-firstword {
+    font-size: 3vw;
+  }
+  .content-heading #heading-secondword {
+    font-size: 3vw;
   }
 }
 /* MAIN CONTENT #########################################################################################*/
@@ -75,20 +82,27 @@ header #main-menu ul li a:active {
   position: absolute;
   top: 40%;
   left: 10%;
+  text-decoration-thickness: 0.3em;
 }
 .content-heading #heading-firstword {
   float: left;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #E12D38;
 }
 .content-heading #heading-firstword h1 {
-  font-size: 7em;
+  font-size: 8em;
   font-weight: lighter;
   color: #17191B;
 }
 .content-heading #heading-secondword {
   float: left;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #E12D38;
 }
 .content-heading #heading-secondword h1 {
-  font-size: 7em;
+  font-size: 8em;
   font-weight: lighter;
   color: #E12D38;
 }
