@@ -8,7 +8,7 @@
 html {
   box-sizing: border-box;
   font-family: "Inconsolata", monospace;
-  font-size: calc(1em + 0.8vw);
+  font-size: calc(1em + 1vw);
 }
 
 /* BODY #########################################################################################*/
@@ -42,7 +42,7 @@ header #main-menu ul {
 }
 header #main-menu ul li {
   list-style-type: none;
-  padding: 20px 0.5em;
+  padding: 20px 0.1em;
   float: left;
 }
 header #main-menu ul li a {
