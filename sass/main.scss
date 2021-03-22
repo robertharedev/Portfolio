@@ -14,7 +14,7 @@ $header-height: 10vh;
 html {
     box-sizing: border-box;
     font-family: 'Inconsolata', monospace;
-    font-size: calc(1.2em + 0.6vw);
+    font-size: calc(1em + 1vw);
 }
 
 /* BODY #########################################################################################*/
@@ -83,7 +83,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: calc(2em + 0.6vw);
+    font-size: calc(2vw + 1em);
 
     .heading-text {
         float: left;
