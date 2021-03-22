@@ -17,20 +17,26 @@ html {
     box-sizing: border-box;
     font-family: 'Inconsolata', monospace;
     font-size: calc(1em + 1vw);
-}
+    background-color: $prim-colour;
+    min-height: 100vh;
 
-/* BODY #########################################################################################*/
-body {
     /* Hide scrollbar but keep functionality */
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    background-color: $prim-colour;
-    min-height: 100vh;
 
     /* Hide scrollbar for Chrome, Safari and Opera */
     &::-webkit-scrollbar {
         display: none;
     }
+}
+
+h1 { font-size: 7vw; }
+a { font-size: 1.4vw; }
+p { font-size: 2vw; }
+
+@media screen and (max-width: 80em) { /*vw is like the shrink/grow rate while em is the size changer*/
+    h1 { font-size: calc(5vw + 2em); }
+    a { font-size: calc(0.4vw + 0.8em); }
 }
 
 /* HEADER #########################################################################################*/
@@ -50,26 +56,21 @@ header {
             li {
                 list-style-type: none;
                 padding: 20px 0.1em;
-                float: left;
 
                 a {
                     text-decoration: none;
                     color: $white-colour;
-                    font-size: 0.8em;
                     padding: 0.1em 0.2em;
-                    border-radius: 5px;
 
                     .function-brackets {
                         color: $sec-colour;
                     }
 
                     &:hover {
-                        background-color: $prim-hover-colour;
                         color: $orange-colour;
                     }
     
                     &:active {
-                        background-color: $prim-active-colour;
                         color: $orange-colour;
                     }
                 }
@@ -79,46 +80,53 @@ header {
 }
 
 /* MAIN CONTENT #########################################################################################*/
-/* MAIN HEADING #########################################################################################*/
-.content-heading {
-    width: 100%;
-    height: 100vh - $header-height;
+.main-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    font-size: calc(2vw + 1em);
+    height: 100vh - $header-height;
 
-    .heading-text {
-        float: left;
-        position: relative;
-        top: -10vh;
-        font-weight: lighter;
-    }
+    .heading-container {
+        
+        background-color: gold;
+        text-align: center;
 
-    .heading-firstword {
-        color: $orange-colour;
-    }
+        .heading-text {
+            font-weight: lighter;
+        }
 
-    .heading-dot {
-        color: $sec-colour;
+        .heading-firstword {
+            color: $orange-colour;
+        }
+
+        .heading-dot {
+            color: $sec-colour;
+        }
+        
+        .heading-secondword {
+            color: $white-colour;
+        }
     }
     
-    .heading-secondword {
-        color: $white-colour;
+    .subheading-container {
+        background-color: forestgreen;
+        text-align: center;
+
+        .subheading-text {
+            color: $white-colour;
+            font-weight: lighter;
+        }
     }
 }
 
+
+
 /* FOOTER #########################################################################################*/
 footer {
-    margin: auto;
-    position: absolute;
-    top: 100vh;
-    width: 100%;
-    height: 10vh;
     background-color: $orange-colour;
     text-align: center;
 
     p {
-        font-size: 0.8em;
+        
     }
 }
