@@ -55,8 +55,8 @@ p {
 header {
   height: 10vh;
   width: 100vw;
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
   /* NAV #########################################################################################*/
 }
 header #main-menu {

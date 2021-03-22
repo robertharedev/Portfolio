@@ -48,8 +48,8 @@ p { font-size: 1.3vw; }
 header {
     height: $header-height;
     width: 100vw;
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
     
     /* NAV #########################################################################################*/
     #main-menu {
