@@ -49,17 +49,18 @@ header #main-menu ul li a {
   color: #ececec;
   font-size: 0.8em;
   padding: 0.1em 0.2em;
+  border-radius: 5px;
 }
 header #main-menu ul li a .function-brackets {
   color: #43aeff;
 }
 header #main-menu ul li a:hover {
-  background-color: aqua;
-  color: #303033;
+  background-color: #2a2a2c;
+  color: #ffba24;
 }
 header #main-menu ul li a:active {
-  background-color: aquamarine;
-  color: #303033;
+  background-color: #1d1d1f;
+  color: #ffba24;
 }
 
 /* MAIN CONTENT #########################################################################################*/

@@ -1,4 +1,6 @@
 $prim-colour: #303033;
+$prim-hover-colour: #2a2a2c;
+$prim-active-colour: #1d1d1f;
 $sec-colour: #43aeff;
 $white-colour: #ececec;
 $orange-colour: #ffba24;
@@ -55,19 +57,20 @@ header {
                     color: $white-colour;
                     font-size: 0.8em;
                     padding: 0.1em 0.2em;
+                    border-radius: 5px;
 
                     .function-brackets {
                         color: $sec-colour;
                     }
 
                     &:hover {
-                        background-color: aqua;
-                        color: $prim-colour;
+                        background-color: $prim-hover-colour;
+                        color: $orange-colour;
                     }
     
                     &:active {
-                        background-color: aquamarine;
-                        color: $prim-colour;
+                        background-color: $prim-active-colour;
+                        color: $orange-colour;
                     }
                 }
             }
