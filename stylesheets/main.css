@@ -30,17 +30,25 @@ a {
 }
 
 p {
-  font-size: 2vw;
+  font-size: 1.3vw;
 }
 
 @media screen and (max-width: 80em) {
-  /*vw is like the shrink/grow rate while em is the size changer*/
+  /* vw is like the shrink/grow rate while em is like the size changer */
   h1 {
     font-size: calc(5vw + 2em);
   }
 
   a {
     font-size: calc(0.4vw + 0.8em);
+  }
+
+  p {
+    font-size: calc(0.4vw + 0.8em);
+  }
+
+  .main-content .subheading-container {
+    padding: 0 10vw;
   }
 }
 /* HEADER #########################################################################################*/
@@ -82,9 +90,10 @@ header #main-menu ul li a:active {
   flex-direction: column;
   justify-content: center;
   height: 90vh;
+  position: relative;
+  top: -5vh;
 }
 .main-content .heading-container {
-  background-color: gold;
   text-align: center;
 }
 .main-content .heading-container .heading-text {
@@ -100,14 +109,30 @@ header #main-menu ul li a:active {
   color: #ececec;
 }
 .main-content .subheading-container {
-  background-color: forestgreen;
   text-align: center;
+  padding: 0 20vw;
 }
 .main-content .subheading-container .subheading-text {
   color: #ececec;
   font-weight: lighter;
 }
+.main-content .test-text {
+  text-align: center;
+  position: relative;
+  top: 30vh;
+  color: #ececec;
+}
+.main-content #down-arrow {
+  color: #ffba24;
+  font-size: calc(1vw + 1.5em);
+}
 
+@media screen and (max-width: 50em) {
+  /*vw is like the shrink/grow rate while em is the size changer*/
+  .main-content {
+    top: -10vh;
+  }
+}
 /* FOOTER #########################################################################################*/
 footer {
   background-color: #ffba24;

@@ -32,11 +32,16 @@ html {
 
 h1 { font-size: 7vw; }
 a { font-size: 1.4vw; }
-p { font-size: 2vw; }
+p { font-size: 1.3vw; }
 
-@media screen and (max-width: 80em) { /*vw is like the shrink/grow rate while em is the size changer*/
+@media screen and (max-width: 80em) { /* vw is like the shrink/grow rate while em is like the size changer */
     h1 { font-size: calc(5vw + 2em); }
     a { font-size: calc(0.4vw + 0.8em); }
+    p { font-size: calc(0.4vw + 0.8em); }
+
+    .main-content .subheading-container {
+        padding: 0 10vw;
+    }
 }
 
 /* HEADER #########################################################################################*/
@@ -85,10 +90,10 @@ header {
     flex-direction: column;
     justify-content: center;
     height: 100vh - $header-height;
+    position: relative;
+    top: -5vh;
 
     .heading-container {
-        
-        background-color: gold;
         text-align: center;
 
         .heading-text {
@@ -109,17 +114,31 @@ header {
     }
     
     .subheading-container {
-        background-color: forestgreen;
         text-align: center;
+        padding: 0 20vw;
 
         .subheading-text {
             color: $white-colour;
             font-weight: lighter;
         }
     }
+
+    .test-text {
+        text-align: center;
+        position: relative;
+        top: 30vh;
+        color: $white-colour;
+    }
+
+    #down-arrow {
+        color: $orange-colour;
+        font-size: calc(1vw + 1.5em);
+    }
 }
 
-
+@media screen and (max-width: 50em) { /*vw is like the shrink/grow rate while em is the size changer*/
+    .main-content { top: -10vh; }
+}
 
 /* FOOTER #########################################################################################*/
 footer {
