@@ -21,10 +21,6 @@ html::-webkit-scrollbar {
   display: none;
 }
 
-h1 {
-  font-size: 7vw;
-}
-
 a {
   font-size: 1.4vw;
 }
@@ -36,10 +32,6 @@ p {
 /* when vw is under 80em */
 @media screen and (max-width: 80em) {
   /* vw is like the shrink/grow rate while em is like the size changer */
-  h1 {
-    font-size: calc(5vw + 2em);
-  }
-
   a {
     font-size: calc(0.4vw + 0.8em);
   }
@@ -47,6 +39,19 @@ p {
   p {
     font-size: calc(0.4vw + 0.8em);
   }
+}
+/* when vw is over 121em */
+@media screen and (min-width: 121em) {
+  /* vw is like the shrink/grow rate while em is like the size changer */
+  a {
+    font-size: 26.88px;
+  }
+
+  p {
+    font-size: 24.96px;
+  }
+
+  /*.main-content { width: ; }*/
 }
 /* HEADER #########################################################################################*/
 header {
@@ -99,18 +104,13 @@ header #main-menu ul li a:active {
 }
 .main-content .heading-info-container .main-heading-container {
   text-align: center;
+  padding-bottom: 1vw;
 }
-.main-content .heading-info-container .main-heading-container .heading-text {
-  font-weight: lighter;
+.main-content .heading-info-container .main-heading-container #nameLogo {
+  width: 80vw;
 }
-.main-content .heading-info-container .main-heading-container .heading-firstword {
-  color: #ffba24;
-}
-.main-content .heading-info-container .main-heading-container .heading-dot {
-  color: #43aeff;
-}
-.main-content .heading-info-container .main-heading-container .heading-secondword {
-  color: #ececec;
+.main-content .heading-info-container .main-heading-container #nameLogo path {
+  stroke: #ffba24;
 }
 .main-content .heading-info-container .subheading-container {
   text-align: center;
