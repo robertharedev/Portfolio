@@ -133,6 +133,7 @@ header #main-menu ul li a:active {
 /* FOOTER #########################################################################################*/
 footer {
   background-color: #ffba24;
+  background-color: aqua;
   text-align: center;
 }
 
