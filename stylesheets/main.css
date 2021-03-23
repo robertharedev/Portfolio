@@ -33,6 +33,7 @@ p {
   font-size: 1.3vw;
 }
 
+/* when vw is under 80em */
 @media screen and (max-width: 80em) {
   /* vw is like the shrink/grow rate while em is like the size changer */
   h1 {
@@ -45,10 +46,6 @@ p {
 
   p {
     font-size: calc(0.4vw + 0.8em);
-  }
-
-  .main-content .subheading-container {
-    padding: 0 10vw;
   }
 }
 /* HEADER #########################################################################################*/
@@ -119,11 +116,11 @@ header #main-menu ul li a:active {
   text-align: center;
   padding: 0 20vw;
 }
-.main-content .heading-info-container .subheading-container .subheading-text {
+.main-content .heading-info-container .subheading-container p {
   color: #ececec;
   font-weight: lighter;
 }
-.main-content .heading-info-container .subheading-container .text-cursor {
+.main-content .heading-info-container .subheading-container #text-cursor {
   animation: 1s blink step-end infinite;
 }
 
@@ -136,15 +133,13 @@ header #main-menu ul li a:active {
   }
 }
 @media screen and (max-width: 50em) {
-  /*vw is like the shrink/grow rate while em is the size changer*/
-  .main-content {
-    top: -10vh;
+  .subheading-container {
+    padding: 0 5vw !important;
   }
 }
 /* FOOTER #########################################################################################*/
 footer {
   background-color: #ffba24;
-  background-color: aqua;
   text-align: center;
 }
 
