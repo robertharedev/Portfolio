@@ -73,6 +73,7 @@ header #main-menu ul li a {
   text-decoration: none;
   color: #ececec;
   padding: 0.1em 0.2em;
+  clear: both;
 }
 header #main-menu ul li a .function-brackets {
   color: #43aeff;
