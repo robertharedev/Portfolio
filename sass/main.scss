@@ -30,15 +30,20 @@ html {
     }
 }
 
-h1 { font-size: 7vw; }
 a { font-size: 1.4vw; }
 p { font-size: 1.3vw; }
 
 /* when vw is under 80em */
 @media screen and (max-width: 80em) { /* vw is like the shrink/grow rate while em is like the size changer */
-    h1 { font-size: calc(5vw + 2em); }
     a { font-size: calc(0.4vw + 0.8em); }
     p { font-size: calc(0.4vw + 0.8em); }
+}
+
+/* when vw is over 121em */
+@media screen and (min-width: 121em) { /* vw is like the shrink/grow rate while em is like the size changer */
+    a { font-size: 26.88px; }
+    p { font-size: 24.96px; }
+    /*.main-content { width: ; }*/
 }
 
 /* HEADER #########################################################################################*/
@@ -96,24 +101,19 @@ header {
     .heading-info-container {
         position: relative;
         top: -10vh;
-
+        
         .main-heading-container {
             text-align: center;
-
-            .heading-text {
-                font-weight: lighter;
-            }
-
-            .heading-firstword {
-                color: $orange-colour;
-            }
-
-            .heading-dot {
-                color: $sec-colour;
-            }
+            padding-bottom: 1vw;
             
-            .heading-secondword {
-                color: $white-colour;
+            #nameLogo {
+                width: 80vw;
+
+                path {
+                    stroke: $orange-colour;
+                }
+
+                
             }
         }
         
