@@ -81,7 +81,7 @@ header #main-menu ul li a .function-brackets {
 header #main-menu ul li a:hover {
   text-decoration: underline;
   text-decoration-style: wavy;
-  text-decoration-color: red;
+  text-decoration-color: #ffba24;
   text-decoration-thickness: 2px;
 }
 header #main-menu ul li a:active {
@@ -123,7 +123,18 @@ header #main-menu ul li a:active {
   color: #ececec;
   font-weight: lighter;
 }
+.main-content .heading-info-container .subheading-container .text-cursor {
+  animation: 1s blink step-end infinite;
+}
 
+@keyframes blink {
+  from, to {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+}
 @media screen and (max-width: 50em) {
   /*vw is like the shrink/grow rate while em is the size changer*/
   .main-content {

@@ -75,7 +75,7 @@ header {
                     &:hover {
                         text-decoration:underline;
                         text-decoration-style: wavy;
-                        text-decoration-color: red;
+                        text-decoration-color: $orange-colour;
                         text-decoration-thickness: 2px;
                     }
     
@@ -128,7 +128,20 @@ header {
                 color: $white-colour;
                 font-weight: lighter;
             }
+
+            .text-cursor {
+                animation: 1s blink step-end infinite;
+            }
         }
+    }
+}
+
+@keyframes blink {
+    from, to {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
     }
 }
 
