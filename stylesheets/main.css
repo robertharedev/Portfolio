@@ -81,39 +81,14 @@ header #main-menu ul li a:active {
 .main-content .heading-info-container .main-heading-container #nameLogo {
   width: 80vw;
 }
-.main-content .heading-info-container .main-heading-container #nameLogo path {
+.main-content .heading-info-container .main-heading-container #nameLogo .firstword {
   stroke: #ffba24;
   stroke-width: 2px;
-}
-.main-content .heading-info-container .main-heading-container #nameLogo path:nth-child(1) {
   animation: fill 1s ease forwards 2.5s;
 }
-.main-content .heading-info-container .main-heading-container #nameLogo path:nth-child(2) {
-  animation: fill 1s ease forwards 2.5s;
-}
-.main-content .heading-info-container .main-heading-container #nameLogo path:nth-child(3) {
-  animation: fill 1s ease forwards 2.5s;
-}
-.main-content .heading-info-container .main-heading-container #nameLogo path:nth-child(4) {
-  animation: fill 1s ease forwards 2.5s;
-}
-.main-content .heading-info-container .main-heading-container #nameLogo path:nth-child(5) {
-  animation: fill 1s ease forwards 2.5s;
-}
-.main-content .heading-info-container .main-heading-container #nameLogo path:nth-child(6) {
-  animation: fill 1s ease forwards 2.5s;
-}
-.main-content .heading-info-container .main-heading-container #nameLogo path:nth-child(7) {
+.main-content .heading-info-container .main-heading-container #nameLogo .secondword {
   stroke: #ececec;
-}
-.main-content .heading-info-container .main-heading-container #nameLogo path:nth-child(8) {
-  stroke: #ececec;
-}
-.main-content .heading-info-container .main-heading-container #nameLogo path:nth-child(9) {
-  stroke: #ececec;
-}
-.main-content .heading-info-container .main-heading-container #nameLogo path:nth-child(10) {
-  stroke: #ececec;
+  stroke-width: 2px;
 }
 .main-content .heading-info-container .subheading-container {
   text-align: center;

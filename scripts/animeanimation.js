@@ -1,6 +1,11 @@
+const svgPath = document.querySelectorAll("path");
+const svgFirstWordPath = document.querySelectorAll(".firstword");
+const svgSecondWordPath = document.querySelectorAll(".secondword");
+const subheadingContainer = document.querySelector(".subheading-container");
+
 // line drawing animation
 anime({
-    targets: "svg path",
+    targets: svgPath,
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: "easeInOutSine",
     duration: 2000,
@@ -11,7 +16,7 @@ anime({
 
 // svg firstword fadein from left
 anime({
-    targets: "svg .firstword",
+    targets: svgFirstWordPath,
     translateX: [-300, 0], // from 200 to 0
     opacity: [0, 1],
     easing: "easeInOutExpo",
@@ -20,7 +25,7 @@ anime({
 
 // svg secondword fadein from right
 anime({
-    targets: "svg .secondword",
+    targets: svgSecondWordPath,
     translateX: [300, 0], // from 200 to 0
     opacity: [0, 1],
     easing: "easeInOutExpo",
@@ -29,7 +34,7 @@ anime({
 
 // subheading fadein from below
 anime({
-    targets: ".subheading-container",
+    targets: subheadingContainer,
     translateY: [75, 0], // from 75 to 0
     opacity: [0, 1],
     easing: "easeInOutExpo",
