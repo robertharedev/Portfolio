@@ -30,6 +30,11 @@ html {
 a { font-size: 1.2vw; }
 p { font-size: 1.3vw; }
 
+#codestyle-text1 { color: $sec-colour; }
+#codestyle-text2 { color: rgb(125, 212, 107) }
+#codestyle-text3 { color: rgb(198, 103, 221) }
+#codestyle-text4 { color: $orange-colour }
+
 // HEADER #########################################################################################
 header {
     height: $header-height;
@@ -55,7 +60,7 @@ header {
                     padding: 0.1em 0.2em;
 
                     .function-brackets {
-                        color: $sec-colour;
+                        color: $orange-colour;
                     }
 
                     &:hover {
@@ -79,19 +84,23 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100vh - $header-height;
     position: relative;
     
-    .heading-info-container {
+    .heading-section {
         position: relative;
         top: -10vh;
         
-        .main-heading-container {
-            text-align: center;
-            padding: 1.5% 0;
+        .heading-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3vh 0;
             width: 100%;
             
             #nameLogo {
+                height: inherit;
                 width: 80%;
                 
                 .firstword {
@@ -109,7 +118,7 @@ header {
         
         .subheading-container {
             text-align: center;
-            padding: 0 30%;
+            padding: 0 25%;
             
             p {
                 color: $white-colour;
@@ -152,21 +161,21 @@ header {
 // VIEWPORT RESIZING MOBILE/DESKTOP RELATED STUFF #################################################################
 // when vw is under 80em
 @media screen and (max-width: 80em) { // vw is like the shrink/grow rate while em is like the size changer
-    a { font-size: calc(0.4vw + 0.8em); }
+    a { font-size: calc(0.4vw + 0.5em); }
     p { font-size: calc(0.4vw + 0.8em); }
 }
 
 // when vw is 121em or over
-@media screen and (min-width: 121em) { // vw is like the shrink/grow rate while em is like the size changer
-    a { font-size: 26.88px; }
-    p { font-size: 24.96px; }
+@media screen and (min-width: 121em) {
+    a { font-size: 23px; }
+    p { font-size: 25px; }
 }
 
 @media screen and (max-width: 50em) {
-    .subheading-container { padding: 0 5vw !important; } // make subheading box wider
     .desktop-content { display: none; }
-    .main-content .heading-info-container .main-heading-container #nameLogo .secondword, // don't know why i cant make this shorter...
-    .main-content .heading-info-container .main-heading-container #nameLogo .firstword { // or this...
+    .subheading-container { padding: 0 5vw !important; } // make subheading box wider
+    .main-content .heading-section .heading-container #nameLogo .secondword, // don't know why i cant make this shorter...
+    .main-content .heading-section .heading-container #nameLogo .firstword { // or this...
         stroke-width: 4px;
     }
 }
