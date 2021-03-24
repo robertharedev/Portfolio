@@ -174,7 +174,7 @@ header {
 
 @media screen and (max-width: 50em) {
     .desktop-content { display: none; }
-    .subheading-container { padding: 0 5vw !important; } // make subheading box wider
+    .subheading-container { padding: 0 5vw !important; } // make subheading box wider (!important means override what's above)
     .main-content .heading-section .heading-container #nameLogo .secondword, // don't know why i cant make this shorter...
     .main-content .heading-section .heading-container #nameLogo .firstword { // or this...
         stroke-width: 4px;
