@@ -57,6 +57,7 @@ header nav ul {
 header nav ul li {
   display: flex;
   list-style-type: none;
+  padding: 0 0.3em;
 }
 header nav ul li a {
   text-decoration: none;

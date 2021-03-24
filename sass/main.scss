@@ -53,6 +53,7 @@ header {
             li {
                 display: flex; // stops it resizing vertically when changing the window's width
                 list-style-type: none;
+                padding: 0 0.3em;
                 
                 a {
                     text-decoration: none;
