@@ -105,15 +105,19 @@ header #main-menu ul li a:active {
 }
 .main-content .heading-info-container .main-heading-container #nameLogo path:nth-child(7) {
   stroke: #ececec;
+  animation: fillw 1s ease forwards 2.5s;
 }
 .main-content .heading-info-container .main-heading-container #nameLogo path:nth-child(8) {
   stroke: #ececec;
+  animation: fillw 1s ease forwards 2.5s;
 }
 .main-content .heading-info-container .main-heading-container #nameLogo path:nth-child(9) {
   stroke: #ececec;
+  animation: fillw 1s ease forwards 2.5s;
 }
 .main-content .heading-info-container .main-heading-container #nameLogo path:nth-child(10) {
   stroke: #ececec;
+  animation: fillw 1s ease forwards 2.5s;
 }
 .main-content .heading-info-container .subheading-container {
   text-align: center;
@@ -141,6 +145,14 @@ header #main-menu ul li a:active {
   }
   to {
     fill: #ffba24;
+  }
+}
+@keyframes fillw {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #ececec;
   }
 }
 @media screen and (max-width: 80em) {

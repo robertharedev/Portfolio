@@ -126,18 +126,22 @@ header {
                     
                     &:nth-child(7) {
                         stroke: $white-colour;
+                        animation: fillw 1s ease forwards 2.5s;
                     }
 
                     &:nth-child(8) {
                         stroke: $white-colour;
+                        animation: fillw 1s ease forwards 2.5s;
                     }
 
                     &:nth-child(9) {
                         stroke: $white-colour;
+                        animation: fillw 1s ease forwards 2.5s;
                     }
 
                     &:nth-child(10) {
                         stroke: $white-colour;
+                        animation: fillw 1s ease forwards 2.5s;
                     }
                 }
             }
@@ -174,6 +178,15 @@ header {
     }
     to {
         fill: $orange-colour;
+    }
+}
+
+@keyframes fillw {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: $white-colour;
     }
 }
 
