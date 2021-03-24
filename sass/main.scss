@@ -12,10 +12,7 @@ $header-height: 10vh;
 
 html {
     box-sizing: border-box;
-    margin: 0 auto;
     height: 100vh;
-    width: 100%;
-    max-width: 1920px;
     font-family: 'Inconsolata', monospace;
     font-size: calc(1em + 1vw);
     background-color: $prim-colour;
@@ -37,25 +34,25 @@ p { font-size: 1.3vw; }
 header {
     height: $header-height;
     width: 100%;
-    display: flex;
-    justify-content: center;
     
     // NAV #########################################################################################
-    #main-menu {
-        text-align: center;
-
+    nav {
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
         ul {
-            display: inline-flex;
+            display: flex;
             
             li {
+                display: flex; // stops it resizing vertically when changing the window's width
                 list-style-type: none;
-                padding: 20px 0.1em;
-
+                
                 a {
                     text-decoration: none;
                     color: $white-colour;
                     padding: 0.1em 0.2em;
-                    clear: both;
 
                     .function-brackets {
                         color: $sec-colour;
@@ -91,11 +88,11 @@ header {
         
         .main-heading-container {
             text-align: center;
-            padding: 1.5vw 0;
+            padding: 1.5% 0;
+            width: 100%;
             
             #nameLogo {
-                width: 80vw;
-                margin: 0 auto;
+                width: 80%;
                 
                 .firstword {
                     stroke: $orange-colour;
@@ -112,7 +109,7 @@ header {
         
         .subheading-container {
             text-align: center;
-            padding: 0 30vw;
+            padding: 0 30%;
             
             p {
                 color: $white-colour;
@@ -157,8 +154,12 @@ header {
 }
 
 @media screen and (max-width: 50em) {
-    .subheading-container { padding: 0 5vw !important; }
+    .subheading-container { padding: 0 5vw !important; } // make subheading box wider
     .desktop-content { display: none; }
+    .main-content .heading-info-container .main-heading-container #nameLogo .secondword, // don't know why i cant make this shorter...
+    .main-content .heading-info-container .main-heading-container #nameLogo .firstword { // or this...
+        stroke-width: 4px;
+    }
 }
 
 @media screen and (max-height: 30em) {
@@ -168,6 +169,7 @@ header {
 /* FOOTER #########################################################################################*/
 footer {
     background-color: $orange-colour;
+    width: 100%;
     text-align: center;
 
     p {

@@ -6,10 +6,7 @@
 
 html {
   box-sizing: border-box;
-  margin: 0 auto;
   height: 100vh;
-  width: 100%;
-  max-width: 1920px;
   font-family: "Inconsolata", monospace;
   font-size: calc(1em + 1vw);
   background-color: #333;
@@ -31,35 +28,35 @@ p {
 header {
   height: 10vh;
   width: 100%;
+}
+header nav {
+  height: inherit;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-header #main-menu {
-  text-align: center;
+header nav ul {
+  display: flex;
 }
-header #main-menu ul {
-  display: inline-flex;
-}
-header #main-menu ul li {
+header nav ul li {
+  display: flex;
   list-style-type: none;
-  padding: 20px 0.1em;
 }
-header #main-menu ul li a {
+header nav ul li a {
   text-decoration: none;
   color: #ececec;
   padding: 0.1em 0.2em;
-  clear: both;
 }
-header #main-menu ul li a .function-brackets {
+header nav ul li a .function-brackets {
   color: #43aeff;
 }
-header #main-menu ul li a:hover {
+header nav ul li a:hover {
   text-decoration: underline;
   text-decoration-style: wavy;
   text-decoration-color: #ffba24;
   text-decoration-thickness: 2px;
 }
-header #main-menu ul li a:active {
+header nav ul li a:active {
   color: #ffba24;
 }
 
@@ -76,11 +73,11 @@ header #main-menu ul li a:active {
 }
 .main-content .heading-info-container .main-heading-container {
   text-align: center;
-  padding: 1.5vw 0;
+  padding: 1.5% 0;
+  width: 100%;
 }
 .main-content .heading-info-container .main-heading-container #nameLogo {
-  width: 80vw;
-  margin: 0 auto;
+  width: 80%;
 }
 .main-content .heading-info-container .main-heading-container #nameLogo .firstword {
   stroke: #ffba24;
@@ -93,7 +90,7 @@ header #main-menu ul li a:active {
 }
 .main-content .heading-info-container .subheading-container {
   text-align: center;
-  padding: 0 30vw;
+  padding: 0 30%;
 }
 .main-content .heading-info-container .subheading-container p {
   color: #ececec;
@@ -144,6 +141,11 @@ header #main-menu ul li a:active {
   .desktop-content {
     display: none;
   }
+
+  .main-content .heading-info-container .main-heading-container #nameLogo .secondword,
+.main-content .heading-info-container .main-heading-container #nameLogo .firstword {
+    stroke-width: 4px;
+  }
 }
 @media screen and (max-height: 30em) {
   .desktop-content {
@@ -153,6 +155,7 @@ header #main-menu ul li a:active {
 /* FOOTER #########################################################################################*/
 footer {
   background-color: #ffba24;
+  width: 100%;
   text-align: center;
 }
 
