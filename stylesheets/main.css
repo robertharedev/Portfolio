@@ -121,7 +121,6 @@ header #main-menu ul li a:active {
 }
 .main-content .heading-info-container .subheading-container p {
   color: #ececec;
-  font-weight: lighter;
 }
 .main-content .heading-info-container .subheading-container #text-cursor {
   animation: 1s blink step-end infinite;
