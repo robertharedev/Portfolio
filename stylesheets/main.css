@@ -9,7 +9,7 @@ html {
   height: 100vh;
   font-family: "Inconsolata", monospace;
   font-size: calc(1em + 1vw);
-  background-color: #333;
+  animation: colourShift 2s ease forwards;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -113,6 +113,14 @@ header nav ul li a:active {
   }
   to {
     fill: #ffba24;
+  }
+}
+@keyframes colourShift {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: #333;
   }
 }
 @media screen and (max-width: 80em) {

@@ -15,7 +15,7 @@ html {
     height: 100vh;
     font-family: 'Inconsolata', monospace;
     font-size: calc(1em + 1vw);
-    background-color: $prim-colour;
+    animation: colourShift 2s ease forwards;
 
     // Hide scrollbar but keep functionality
     -ms-overflow-style: none;  // IE and Edge
@@ -137,6 +137,15 @@ header {
     }
     to {
         fill: $orange-colour;
+    }
+}
+
+@keyframes colourShift {
+    from {
+        background-color: black;
+    }
+    to {
+        background-color: $prim-colour;
     }
 }
 
