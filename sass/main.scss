@@ -1,4 +1,4 @@
-$prim-colour: #303033;
+$prim-colour: #333;
 $sec-colour: #43aeff;
 $white-colour: #ececec;
 $orange-colour: #ffba24;
@@ -91,10 +91,11 @@ header {
         
         .main-heading-container {
             text-align: center;
-            padding-bottom: 1vw;
+            padding: 1.5vw 0;
             
             #nameLogo {
                 width: 80vw;
+                margin: 0 auto;
                 
                 .firstword {
                     stroke: $orange-colour;
@@ -111,7 +112,7 @@ header {
         
         .subheading-container {
             text-align: center;
-            padding: 0 20vw;
+            padding: 0 30vw;
             
             p {
                 color: $white-colour;
