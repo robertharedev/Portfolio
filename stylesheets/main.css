@@ -77,7 +77,7 @@ header nav ul li a:active {
   color: #ffba24;
 }
 
-.main-content {
+.main-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,38 +85,38 @@ header nav ul li a:active {
   height: 90vh;
   position: relative;
 }
-.main-content .heading-section {
+.main-wrapper .heading-section {
   position: relative;
   top: -10vh;
 }
-.main-content .heading-section .heading-container {
+.main-wrapper .heading-section .heading-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3vh 0;
   width: 100%;
 }
-.main-content .heading-section .heading-container #nameLogo {
+.main-wrapper .heading-section .heading-container #nameLogo {
   height: inherit;
   width: 80%;
 }
-.main-content .heading-section .heading-container #nameLogo .firstword {
+.main-wrapper .heading-section .heading-container #nameLogo .firstword {
   stroke: #ffba24;
   stroke-width: 2px;
   animation: fill 1s ease forwards 2.5s;
 }
-.main-content .heading-section .heading-container #nameLogo .secondword {
+.main-wrapper .heading-section .heading-container #nameLogo .secondword {
   stroke: #ececec;
   stroke-width: 2px;
 }
-.main-content .heading-section .subheading-container {
+.main-wrapper .heading-section .subheading-container {
   text-align: center;
   padding: 0 25%;
 }
-.main-content .heading-section .subheading-container p {
+.main-wrapper .heading-section .subheading-container p {
   color: #ececec;
 }
-.main-content .heading-section .subheading-container #text-cursor {
+.main-wrapper .heading-section .subheading-container #text-cursor {
   animation: 1s blink step-end infinite;
 }
 
