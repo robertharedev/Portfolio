@@ -18,19 +18,19 @@ anime({
 // svg firstword fadein from left
 anime({
     targets: svgFirstWordPath,
-    translateX: [-300, 0], // from 200 to 0
+    translateX: [-150, 0], // from -300 to 0
     opacity: [0, 1],
     easing: "easeInOutSine",
-    duration: 1000
+    duration: 2000
 });
 
 // svg secondword fadein from right
 anime({
     targets: svgSecondWordPath,
-    translateX: [300, 0], // from 200 to 0
+    translateX: [150, 0], // from 200 to 0
     opacity: [0, 1],
     easing: "easeInOutSine",
-    duration: 1000
+    duration: 2000
 });
 
 // subheadings fadein from above and below
