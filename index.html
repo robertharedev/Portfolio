@@ -4,23 +4,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Robert Hare | Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
     <link href="bootstrap-3.3.7-dist/css/bootstrap.css">
     <link href="stylesheets/main.css" type="text/css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
-
 <body>
     <header>
         <nav class="desktop-content">
             <ul>
                 <li><a href="index.html">home<span class="function-brackets">()</span></a></li>
-                <li><a href="">projects<span class="function-brackets">()</span></a></li> <!-- these will scroll user down the page instead of going to a different file -->
-                <li><a href="">aboutMe<span class="function-brackets">()</span></a></li>
-                <li><a href="">contact<span class="function-brackets">()</span></a></li>
+                <li><a href="#projects-section">projects<span class="function-brackets">()</span></a></li> <!-- these will scroll user down the page instead of going to a different file -->
+                <li><a href="#about-me-section">aboutMe<span class="function-brackets">()</span></a></li>
+                <li><a href="#contact-section">contact<span class="function-brackets">()</span></a></li>
             </ul>
         </nav>
     </header>
-
     <div class="main-wrapper">
         <div class="heading-section">
             <div id="subheading1" class="subheading-container">
@@ -48,8 +50,19 @@
                 </p>
             </div>
         </div>
+        <div id="scroll-text">
+            <p>scroll</p>
+        </div>
     </div>
-
+    <div class="projects-wrapper info-section" id="projects-section">
+        <h1>projects section</h1>
+    </div>
+    <div class="about-me-wrapper info-section" id="about-me-section">
+        <h1>about me section</h1>
+    </div>
+    <div class="contact-wrapper info-section" id="contact-section">
+        <h1>contact section</h1>
+    </div>
     <footer>
         <p>Robert Hare &copy 2021</p>
     </footer>
