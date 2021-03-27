@@ -129,7 +129,7 @@ body .main-wrapper .heading-section .subheading-container p {
 body .main-wrapper .heading-section .subheading-container #text-cursor {
   animation: 1s blink step-end infinite;
 }
-body .main-wrapper #scroll-symbol {
+body .main-wrapper #scroll-symbol-container {
   display: flex;
   align-items: flex-end;
   position: absolute;
