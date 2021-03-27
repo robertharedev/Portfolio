@@ -4,7 +4,6 @@ $white-colour: #ececec;
 $orange-colour: #ffba24;
 $green-colour: #7dd46b;
 $purple-colour: #c667dd;
-$syntax-colour-4: #ffba24;
 $header-height: 10vh;
 
 * {
@@ -33,7 +32,7 @@ html {
     }
 }
 
-h1 { font-family: "Apercu Mono", "Inconsolata", monospace;}
+h1 { font-family: "Apercu Mono", "Inconsolata", monospace; font-size: 3vw; }
 a { font-size: 1.2vw; }
 p { font-size: 1.3vw; }
 
@@ -148,7 +147,7 @@ body {
             align-items: flex-end;
             position: absolute;
             bottom: 0;
-            padding-bottom: 5vh;
+            padding: 0 0 5vh 0;
             stroke-width: 0.75px;
         }
     }
@@ -203,22 +202,26 @@ body {
         p { font-size: calc(0.4vw + 0.8em); }
     }
 
-    // when vw is 121em or over
-    @media screen and (min-width: 121em) {
-        a { font-size: 23px; }
-        p { font-size: 25px; }
-        
+    // when vw is 120em or over (>= 1920px)
+    @media screen and (min-width: 120em) { // (1em is 16px) default font-size
+        h1 { font-size: 58px; } // (120 * 16) = 1920 * 0.02 because (2vw) is h1's default size
+        a { font-size: 23px; } // (120 * 16) = 1920 * 0.012 because (1.2vw) is a's default size
+        p { font-size: 25px; } // (120 * 16) = 1920 * 0.013 because (1.3vw) is p's default size
+        .info-section { width: 1920px; }
     }
 
+    // if screen is narrow
     @media screen and (max-width: 50em) {
         .desktop-content { display: none; }
         .subheading-container { padding: 0 5vw !important; } // make subheading box wider (!important means override what's above)
-        .main-content .heading-section .heading-container #nameLogo .secondword, // don't know why i cant make this shorter...
-        .main-content .heading-section .heading-container #nameLogo .firstword { // or this...
+        .main-wrapper .heading-section .heading-container #nameLogo .secondword, // don't know why i cant make this shorter...
+        .main-wrapper .heading-section .heading-container #nameLogo .firstword { // or this...
             stroke-width: 4px;
         }
+        .main-wrapper #scroll-symbol-container { padding: 0 0 15vh 0 !important; }
     }
 
+    // if screen is wide and not tall (landscape mobile)
     @media screen and (max-height: 30em) {
         .desktop-content { display: none; }
     }

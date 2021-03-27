@@ -22,6 +22,7 @@ html::-webkit-scrollbar {
 
 h1 {
   font-family: "Apercu Mono", "Inconsolata", monospace;
+  font-size: 3vw;
 }
 
 a {
@@ -134,7 +135,7 @@ body .main-wrapper #scroll-symbol-container {
   align-items: flex-end;
   position: absolute;
   bottom: 0;
-  padding-bottom: 5vh;
+  padding: 0 0 5vh 0;
   stroke-width: 0.75px;
 }
 body .info-section {
@@ -181,12 +182,18 @@ body .contact-wrapper {
     font-size: calc(0.4vw + 0.8em);
   }
 }
-@media screen and (min-width: 121em) {
+@media screen and (min-width: 120em) {
+  body h1 {
+    font-size: 58px;
+  }
   body a {
     font-size: 23px;
   }
   body p {
     font-size: 25px;
+  }
+  body .info-section {
+    width: 1920px;
   }
 }
 @media screen and (max-width: 50em) {
@@ -196,9 +203,12 @@ body .contact-wrapper {
   body .subheading-container {
     padding: 0 5vw !important;
   }
-  body .main-content .heading-section .heading-container #nameLogo .secondword,
-body .main-content .heading-section .heading-container #nameLogo .firstword {
+  body .main-wrapper .heading-section .heading-container #nameLogo .secondword,
+body .main-wrapper .heading-section .heading-container #nameLogo .firstword {
     stroke-width: 4px;
+  }
+  body .main-wrapper #scroll-symbol-container {
+    padding: 0 0 15vh 0 !important;
   }
 }
 @media screen and (max-height: 30em) {
