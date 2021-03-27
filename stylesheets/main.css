@@ -196,10 +196,12 @@ body .contact-wrapper {
     width: 1920px;
   }
 }
-@media screen and (max-width: 50em) {
-  body .desktop-content {
+@media screen and (min-width: 50em) {
+  body .mobile-content {
     display: none;
   }
+}
+@media screen and (max-width: 50em) {
   body .subheading-container {
     padding: 0 5vw !important;
   }
@@ -210,9 +212,18 @@ body .main-wrapper .heading-section .heading-container #nameLogo .firstword {
   body .main-wrapper #scroll-symbol-container {
     padding: 0 0 10vh 0 !important;
   }
+  body .desktop-content {
+    display: none;
+  }
+  body .mobile-content {
+    display: block;
+  }
 }
 @media screen and (max-height: 30em) {
   body .desktop-content {
+    display: none;
+  }
+  body .mobile-content {
     display: none;
   }
 }
