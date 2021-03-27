@@ -143,34 +143,29 @@ body {
             }
         }
 
-        #scroll-text {
+        #scroll-arrow {
             display: flex;
             align-items: flex-end;
             position: absolute;
             bottom: 0;
             padding-bottom: 5vh;
-
-            p {
-                font-size: 1vw;
-            }
         }
     }
 
     .info-section {
-        height: 100vh;
         width: 100%;
     }
 
     .projects-wrapper {
-        background-color: red;
+        background-color: blue;
     }
 
     .about-me-wrapper {
-        background-color: orange;
+        background-color: lightblue;
     }
 
     .contact-wrapper {
-        background-color: yellow;
+        background-color: aqua;
     }
 
     @keyframes blink {

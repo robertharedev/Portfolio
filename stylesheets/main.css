@@ -129,28 +129,24 @@ body .main-wrapper .heading-section .subheading-container p {
 body .main-wrapper .heading-section .subheading-container #text-cursor {
   animation: 1s blink step-end infinite;
 }
-body .main-wrapper #scroll-text {
+body .main-wrapper #scroll-arrow {
   display: flex;
   align-items: flex-end;
   position: absolute;
   bottom: 0;
   padding-bottom: 5vh;
 }
-body .main-wrapper #scroll-text p {
-  font-size: 1vw;
-}
 body .info-section {
-  height: 100vh;
   width: 100%;
 }
 body .projects-wrapper {
-  background-color: red;
+  background-color: blue;
 }
 body .about-me-wrapper {
-  background-color: orange;
+  background-color: lightblue;
 }
 body .contact-wrapper {
-  background-color: yellow;
+  background-color: aqua;
 }
 @keyframes blink {
   from, to {
