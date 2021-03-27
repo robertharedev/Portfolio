@@ -208,7 +208,7 @@ body .main-wrapper .heading-section .heading-container #nameLogo .firstword {
     stroke-width: 4px;
   }
   body .main-wrapper #scroll-symbol-container {
-    padding: 0 0 15vh 0 !important;
+    padding: 0 0 10vh 0 !important;
   }
 }
 @media screen and (max-height: 30em) {
