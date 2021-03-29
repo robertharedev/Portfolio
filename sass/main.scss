@@ -162,6 +162,14 @@ body {
 
     .about-me-wrapper {
         background-color: lightblue;
+
+        .left-image-wrapper {
+                
+        }
+
+        .right-text-wrapper {
+
+        }
     }
 
     .contact-wrapper {
@@ -211,7 +219,7 @@ body {
     }
     
     // if on desktop (wider screen)
-    @media screen and (min-width: 50em) { 
+    @media screen and (min-width: 50em) {
         .mobile-content { display: none; }
     }
 
