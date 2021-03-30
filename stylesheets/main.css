@@ -147,7 +147,6 @@ body .info-section {
 body .info-section h1 {
   display: flex;
   justify-content: center;
-  background-color: greenyellow;
 }
 body .projects-wrapper {
   background-color: blue;
