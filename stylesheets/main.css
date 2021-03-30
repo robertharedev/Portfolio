@@ -147,6 +147,12 @@ body .projects-wrapper {
 body .about-me-wrapper {
   background-color: lightblue;
 }
+body .about-me-wrapper .info-section-content {
+  display: flex;
+}
+body .about-me-wrapper .info-section-content .left-image-wrapper img {
+  width: 700px;
+}
 body .contact-wrapper {
   background-color: aqua;
 }

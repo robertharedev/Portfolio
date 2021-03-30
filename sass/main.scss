@@ -162,13 +162,21 @@ body {
 
     .about-me-wrapper {
         background-color: lightblue;
-
-        .left-image-wrapper {
+        
+        .info-section-content {
+            display: flex;
             
-        }
 
-        .right-text-wrapper {
+            .left-image-wrapper {
 
+                img {
+                    width: 700px;
+                }
+            }
+
+            .right-text-wrapper {
+                
+            }
         }
     }
 
