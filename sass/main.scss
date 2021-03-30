@@ -155,43 +155,51 @@ body {
     .info-section {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
         width: 100%;
 
         h1 {
             display: flex;
             justify-content: center;
+            padding: 5vh 0;
         }
     }
 
     .projects-wrapper {
-        background-color: blue;
+        
     }
 
     .about-me-wrapper {
-        background-color: lightblue;
+        display: inline-block;
         
-        .info-section-content {
+        #about-me-section-content {
             width: 60%;
             display: flex;
-            justify-content: center;
             align-items: center;
+            margin: 0 auto;
+            position: relative;
 
             .left-image-wrapper {
+                
 
                 img {
-                    width: 700px;
+                    float: left;
+                    border-radius: 10px;
                 }
             }
 
             .right-text-wrapper {
-                
+                display: inline;
+                position: absolute;
+                right: 0;
+                width: 50%;
             }
         }
     }
 
     .contact-wrapper {
-        background-color: aqua;
+
     }
 
     @keyframes blink {

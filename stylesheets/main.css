@@ -141,30 +141,34 @@ body .main-wrapper #scroll-symbol-container {
 body .info-section {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 100%;
 }
 body .info-section h1 {
   display: flex;
   justify-content: center;
-}
-body .projects-wrapper {
-  background-color: blue;
+  padding: 5vh 0;
 }
 body .about-me-wrapper {
-  background-color: lightblue;
+  display: inline-block;
 }
-body .about-me-wrapper .info-section-content {
+body .about-me-wrapper #about-me-section-content {
   width: 60%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  position: relative;
 }
-body .about-me-wrapper .info-section-content .left-image-wrapper img {
-  width: 700px;
+body .about-me-wrapper #about-me-section-content .left-image-wrapper img {
+  float: left;
+  border-radius: 10px;
 }
-body .contact-wrapper {
-  background-color: aqua;
+body .about-me-wrapper #about-me-section-content .right-text-wrapper {
+  display: inline;
+  position: absolute;
+  right: 0;
+  width: 50%;
 }
 @keyframes blink {
   from, to {
