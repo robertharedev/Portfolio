@@ -1,4 +1,16 @@
 
+// navbar elements drop down onto page
+const navElements = document.querySelectorAll(".nav-element");
+anime({
+    targets: navElements,
+    translateY: [-100, 0],
+    direction: "forwards",
+    delay: function(el, i, l) {
+      return (i * 100) + 3200;
+    },
+    duration: 3000,
+});
+
 // line drawing animation
 const svgPath = document.querySelectorAll(".lineDraw");
 anime({

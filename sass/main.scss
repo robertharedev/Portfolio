@@ -69,19 +69,19 @@ body {
                     padding: 0 0.3em;
                     
                     a {
-                        text-decoration: none;
                         color: $white-colour;
                         padding: 0.1em 0.2em;
+                        text-decoration: none wavy $orange-colour 2px; // so the colour fades from orange instead of from white when it transitions on hover
+                        transition: text-decoration 0.5s ease-in-out;
 
                         .function-brackets {
                             color: $orange-colour;
                         }
 
                         &:hover {
-                            text-decoration:underline;
-                            text-decoration-style: wavy;
-                            text-decoration-color: $orange-colour;
-                            text-decoration-thickness: 2px;
+                            text-decoration: underline wavy $orange-colour 2px;
+                            text-decoration-skip-ink: none;
+                            text-underline-offset: 4px;
                         }
         
                         &:active {
@@ -222,6 +222,10 @@ body {
                 border-bottom: 2px dashed #666;
                 outline: none;
                 transition: border-bottom 0.2s ease-in-out;
+
+                &:hover {
+                    border-bottom: 2px dashed $orange-colour;
+                }
 
                 &:focus {
                     border-bottom: 2px dashed $green-colour;
