@@ -72,6 +72,9 @@ body {
                         color: $white-colour;
                         padding: 0.1em 0.2em;
                         text-decoration: none wavy $orange-colour 2px; // so the colour fades from orange instead of from white when it transitions on hover
+                        -webkit-transition: text-decoration 0.5s ease-in-out;
+                        -moz-transition: text-decoration 0.5s ease-in-out;
+                        -o-transition: text-decoration 0.5s ease-in-out;
                         transition: text-decoration 0.5s ease-in-out;
 
                         .function-brackets {
@@ -225,6 +228,9 @@ body {
             input[type="text"], #message-textarea {
                 border-bottom: 2px dashed #666;
                 outline: none;
+                -webkit-transition: border-bottom 0.2s ease-in-out;
+                -moz-transition: border-bottom 0.2s ease-in-out;
+                -o-transition: border-bottom 0.2s ease-in-out;
                 transition: border-bottom 0.2s ease-in-out;
 
                 &:hover {
