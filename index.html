@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <link href="bootstrap-3.3.7-dist/css/bootstrap.css">
     <link href="stylesheets/main.css" type="text/css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 <body>
     <header>
@@ -81,7 +81,27 @@
     <div class="contact-wrapper info-section" id="contact">
         <h1>contact</h1>
         <!-- FORM (first name, last name, email, subject, message, send button) -->
-
+        <form>
+            <div id="full-name-wrapper">
+                <label for="full-name">Full name</label>
+                <input type="text" id="full-name" placeholder="Bruh" required>
+            </div>
+            <div id="email-wrapper">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Bruh" required>
+            </div>
+            <br style="clear: both;">
+            <div id="subject-wrapper">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Bruh" required>
+            </div>
+            <div id="message-wrapper">
+                <label for="message">Message</label>
+                <textarea type="text" id="message" placeholder="Bruh" required></textarea>
+            </div>
+            <br>
+            <input type="submit" value="send()">
+        </form>
     </div>
     <footer>
         <p>Robert Hare &copy 2021</p>

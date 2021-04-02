@@ -10,10 +10,10 @@ $header-height: 10vh;
     margin: 0px;
     padding: 0px;
     border: 0px;
+    box-sizing: border-box;
 }
 
 html {
-    box-sizing: border-box;
     height: 100vh;
     width: 100vw;
     font-family: 'Inconsolata', 'Space Mono', monospace;
@@ -32,9 +32,11 @@ html {
     }
 }
 
+// Specific font-sizes and families
 h1 { font-family: "Apercu Mono", "Inconsolata", monospace; font-size: 3vw; }
 a { font-size: 1.2vw; }
-p { font-size: 1.3vw; }
+p, label, input, textarea { font-size: 1.3vw; }
+input, textarea { font-family: 'Inconsolata', 'Space Mono', monospace; }
 
 #codestyle-text1 { color: $sec-colour; }
 #codestyle-text2 { color: $green-colour; }
@@ -204,6 +206,54 @@ body {
 
     .contact-wrapper {
 
+        form {
+            width: 40%;
+
+            input, label, #message {
+                display: block;
+            }
+            
+            #full-name-wrapper {
+                float: left;
+                width: 50%;
+
+                label, input {
+                    width: 95%;
+                    margin: 0 auto 0 0;
+                }
+            }
+
+            #email-wrapper {
+                float: left;
+                width: 50%;
+                
+                label, input {
+                    width: 95%;
+                    margin: 0 0 0 auto;
+                }
+            }
+
+            #subject-wrapper {
+
+
+                input {
+                    width: 100%;
+                }
+            }
+
+            #message-wrapper {
+                
+                #message {
+                    resize: vertical;
+                    width: 100%;
+                }
+            }
+
+            input[type="submit"] {
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
     }
 
     @keyframes blink {
@@ -238,14 +288,17 @@ body {
     @media screen and (max-width: 80em) { // vw is like the shrink/grow rate while em is like the size changer
         h1 { font-size: calc(1vw + 1.5em); }
         a { font-size: calc(0.4vw + 0.5em); }
-        p { font-size: calc(0.4vw + 0.6em); }
+        p, label, input, textarea { font-size: calc(0.4vw + 0.6em); }
+        .contact-wrapper form {
+            width: 90%;
+        }
     }
 
     // when vw is 120em or over (>= 1920px)
     @media screen and (min-width: 120em) { // (1em is 16px) default font-size
         h1 { font-size: 58px; } // (120 * 16) = 1920 * 0.02 because (2vw) is h1's default size
         a { font-size: 23px; } // (120 * 16) = 1920 * 0.012 because (1.2vw) is a's default size
-        p { font-size: 25px; } // (120 * 16) = 1920 * 0.013 because (1.3vw) is p's default size
+        p, label, input, textarea { font-size: 25px; } // (120 * 16) = 1920 * 0.013 because (1.3vw) is p's default size
         .info-section { width: 1920px; }
     }
     
