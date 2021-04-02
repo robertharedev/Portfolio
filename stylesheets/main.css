@@ -180,6 +180,10 @@ body .about-me-wrapper #about-me-section-content p {
   position: absolute;
   right: 0;
   width: 50%;
+  background-color: rgba(32, 32, 32, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  border: 4px dashed #111;
 }
 body .contact-wrapper form {
   width: 40%;
@@ -326,7 +330,9 @@ body .main-wrapper .heading-section .heading-container #nameLogo .firstword {
   body .about-me-wrapper #about-me-section-content p {
     width: auto;
     text-align: center;
-    padding: 5vw;
+    margin: 4vw;
+    padding: 2vw;
+    bottom: 0;
   }
   body .desktop-content {
     display: none;

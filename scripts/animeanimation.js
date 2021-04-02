@@ -4,10 +4,10 @@ const navElements = document.querySelectorAll(".nav-element");
 anime({
     targets: navElements,
     translateY: [-200, 0],
+    opacity: [0, 1],
+    delay: function(el, i, l) { return (i * 200) + 1800; },
     direction: "forwards",
-    delay: function(el, i, l) {
-      return (i * 100) + 3200;
-    },
+    easing: "easeInOutExpo",
     duration: 3000,
 });
 
@@ -16,11 +16,10 @@ const svgPath = document.querySelectorAll(".lineDraw");
 anime({
     targets: svgPath,
     strokeDashoffset: [anime.setDashoffset, 0],
-    easing: "easeInOutSine",
-    duration: 2500,
     delay: function(el, i) { return i * 100 }, 
     direction: "forwards",
-    loop: false
+    easing: "easeInOutSine",
+    duration: 2500,
 });
 
 // svg firstword fadein from left
