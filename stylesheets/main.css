@@ -249,7 +249,7 @@ body .contact-wrapper form input[type=submit] {
     font-size: calc(0.4vw + 0.6em);
   }
   body .contact-wrapper form {
-    width: 90%;
+    width: 80%;
   }
 }
 @media screen and (min-width: 120em) {
