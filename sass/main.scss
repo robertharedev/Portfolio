@@ -71,6 +71,7 @@ body {
                     a {
                         color: $white-colour;
                         padding: 0.1em 0.2em;
+                        opacity: 0.9;
                         text-decoration: none wavy $orange-colour 2px; // so the colour fades from orange instead of from white when it transitions on hover
                         -webkit-transition: text-decoration 0.5s ease-in-out;
                         -moz-transition: text-decoration 0.5s ease-in-out;
@@ -85,10 +86,12 @@ body {
                             text-decoration: underline wavy $orange-colour 2px;
                             text-decoration-skip-ink: none;
                             text-underline-offset: 4px;
+                            opacity: 1;
                         }
         
                         &:active {
                             color: $orange-colour;
+                            opacity: 1;
                         }
                     }
                 }
@@ -203,7 +206,7 @@ body {
                 position: absolute;
                 right: 0;
                 width: 50%;
-                background-color: rgba(32, 32, 32, 0.6);
+                background-color: rgba(32, 32, 32, 0.6); // Adding alpha to only the background (not the dashed border)
                 padding: 20px;
                 border-radius: 10px;
                 border: 4px dashed #111;
@@ -284,19 +287,50 @@ body {
                 text-align: center;
                 padding: 10px;
                 margin: 0 auto;
-                border: 2px dashed $orange-colour;
+                border: 2px dashed #111;
                 outline: none;
 
                 &:hover {
                     cursor: pointer;
                     background-color: #555;
                 }
-
+                
                 &:active {
                     background-color: $orange-colour;
-                    border: 2px dashed $white-colour;
+                    color: $prim-colour;
                 }
             }
+        }
+    }
+
+    // TOP OF PAGE LINK ###############################################################################
+    #to-top-link {
+        display: none; // hide by default
+        color: $white-colour;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        text-decoration: none;
+        margin: 0 40px 40px 0;
+
+        &:hover {
+
+        }
+
+        &:active {
+
+        }
+    }
+
+    // FOOTER #########################################################################################
+    footer {
+        background-color: $orange-colour;
+        width: 100%;
+        text-align: center;
+        color: $prim-colour;
+
+        p {
+            
         }
     }
 
@@ -386,14 +420,4 @@ body {
         .mobile-content { display: none; }
     }
 
-    /* FOOTER #########################################################################################*/
-    footer {
-        background-color: $orange-colour;
-        width: 100%;
-        text-align: center;
-
-        p {
-            
-        }
-    }
 }

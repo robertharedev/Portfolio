@@ -58,7 +58,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* FOOTER #########################################################################################*/
 }
 body header {
   display: flex;
@@ -78,6 +77,7 @@ body header nav ul li {
 body header nav ul li a {
   color: #ececec;
   padding: 0.1em 0.2em;
+  opacity: 0.9;
   text-decoration: none wavy #ffba24 2px;
   -webkit-transition: text-decoration 0.5s ease-in-out;
   -moz-transition: text-decoration 0.5s ease-in-out;
@@ -91,9 +91,11 @@ body header nav ul li a:hover {
   text-decoration: underline wavy #ffba24 2px;
   text-decoration-skip-ink: none;
   text-underline-offset: 4px;
+  opacity: 1;
 }
 body header nav ul li a:active {
   color: #ffba24;
+  opacity: 1;
 }
 body .main-wrapper {
   display: flex;
@@ -247,7 +249,7 @@ body .contact-wrapper form input[type=submit] {
   text-align: center;
   padding: 10px;
   margin: 0 auto;
-  border: 2px dashed #ffba24;
+  border: 2px dashed #111;
   outline: none;
 }
 body .contact-wrapper form input[type=submit]:hover {
@@ -256,7 +258,22 @@ body .contact-wrapper form input[type=submit]:hover {
 }
 body .contact-wrapper form input[type=submit]:active {
   background-color: #ffba24;
-  border: 2px dashed #ececec;
+  color: #333;
+}
+body #to-top-link {
+  display: none;
+  color: #ececec;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-decoration: none;
+  margin: 0 40px 40px 0;
+}
+body footer {
+  background-color: #ffba24;
+  width: 100%;
+  text-align: center;
+  color: #333;
 }
 @keyframes blink {
   from, to {
@@ -354,11 +371,6 @@ body .main-wrapper .heading-section .heading-container #nameLogo .firstword {
   body .mobile-content {
     display: none;
   }
-}
-body footer {
-  background-color: #ffba24;
-  width: 100%;
-  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
