@@ -12,11 +12,10 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 <body>
-
     <header id="top-of-page">
         <nav class="desktop-content">
             <ul>
-                <li class="nav-element"><a href="index.html">home<span class="function-brackets">()</span></a></li>
+                <li class="nav-element"><a href="index.php">home<span class="function-brackets">()</span></a></li>
                 <li class="nav-element"><a href="#projects">projects<span class="function-brackets">()</span></a></li> <!-- these will scroll user down the page instead of going to a different file -->
                 <li class="nav-element"><a href="#about-me">aboutMe<span class="function-brackets">()</span></a></li>
                 <li class="nav-element"><a href="#contact">contact<span class="function-brackets">()</span></a></li>
@@ -120,3 +119,7 @@
     <script src="scripts/scroll-to-top.js"></script>
 </body>
 </html>
+
+<?php
+echo "bruh";
+?>
