@@ -87,6 +87,10 @@
         <h1>contact</h1>
         <!-- FORM -->
         <form id="contact-form" action="javascript:sendEmail()" method="POST">
+            <!-- Hidden info [see formsubmit docs] -->
+            <input type="hidden" name="_template" value="table"> <!-- Formats the email with a formsubmit template -->
+            <input type="hidden" name="_subject" value="New Message - robertharedev"> <!-- Email subject -->
+
             <div id="full-name-wrapper">
                 <label for="full-name">Full name</label>
                 <input type="text" id="full-name" placeholder="What's your name?" name="name" required>
