@@ -190,18 +190,18 @@ body .about-me-wrapper #about-me-section-content p {
   border-radius: 10px;
   border: 4px dashed #111;
 }
-body .contact-wrapper form {
+body .contact-wrapper #contact-form {
   width: 40%;
   margin-bottom: 10vh;
 }
-body .contact-wrapper form input, body .contact-wrapper form label, body .contact-wrapper form #message-textarea {
+body .contact-wrapper #contact-form input, body .contact-wrapper #contact-form label, body .contact-wrapper #contact-form #message-textarea {
   display: block;
   border-radius: 5px;
   padding: 5px;
   background-color: #333;
   color: #ececec;
 }
-body .contact-wrapper form input[type=text], body .contact-wrapper form #message-textarea {
+body .contact-wrapper #contact-form input[type=text], body .contact-wrapper #contact-form #message-textarea {
   border-bottom: 2px dashed #666;
   outline: none;
   -webkit-transition: border-bottom 0.2s ease-in-out;
@@ -209,54 +209,54 @@ body .contact-wrapper form input[type=text], body .contact-wrapper form #message
   -o-transition: border-bottom 0.2s ease-in-out;
   transition: border-bottom 0.2s ease-in-out;
 }
-body .contact-wrapper form input[type=text]:hover, body .contact-wrapper form #message-textarea:hover {
+body .contact-wrapper #contact-form input[type=text]:hover, body .contact-wrapper #contact-form #message-textarea:hover {
   border-bottom: 2px dashed #ffba24;
 }
-body .contact-wrapper form input[type=text]:focus, body .contact-wrapper form #message-textarea:focus {
+body .contact-wrapper #contact-form input[type=text]:focus, body .contact-wrapper #contact-form #message-textarea:focus {
   border-bottom: 2px dashed #7dd46b;
 }
-body .contact-wrapper form #full-name-wrapper {
+body .contact-wrapper #contact-form #full-name-wrapper {
   float: left;
   width: 50%;
 }
-body .contact-wrapper form #full-name-wrapper label, body .contact-wrapper form #full-name-wrapper input {
+body .contact-wrapper #contact-form #full-name-wrapper label, body .contact-wrapper #contact-form #full-name-wrapper input {
   width: 95%;
   margin: auto auto auto 0;
 }
-body .contact-wrapper form #email-wrapper {
+body .contact-wrapper #contact-form #email-wrapper {
   float: left;
   width: 50%;
 }
-body .contact-wrapper form #email-wrapper label, body .contact-wrapper form #email-wrapper input {
+body .contact-wrapper #contact-form #email-wrapper label, body .contact-wrapper #contact-form #email-wrapper input {
   width: 95%;
   margin: auto 0 auto auto;
 }
-body .contact-wrapper form #subject-wrapper {
+body .contact-wrapper #contact-form #subject-wrapper {
   margin: 4vh 0 0 0;
 }
-body .contact-wrapper form #subject-wrapper input {
+body .contact-wrapper #contact-form #subject-wrapper input {
   width: 100%;
 }
-body .contact-wrapper form #message-wrapper {
+body .contact-wrapper #contact-form #message-wrapper {
   margin: 4vh 0 0 0;
 }
-body .contact-wrapper form #message-wrapper #message-textarea {
+body .contact-wrapper #contact-form #message-wrapper #message-textarea {
   resize: vertical;
   width: 100%;
   height: 10vh;
 }
-body .contact-wrapper form input[type=submit] {
+body .contact-wrapper #contact-form input[type=submit] {
   text-align: center;
   padding: 10px;
   margin: 0 auto;
   border: 2px dashed #111;
   outline: none;
 }
-body .contact-wrapper form input[type=submit]:hover {
+body .contact-wrapper #contact-form input[type=submit]:hover {
   cursor: pointer;
   background-color: #555;
 }
-body .contact-wrapper form input[type=submit]:active {
+body .contact-wrapper #contact-form input[type=submit]:active {
   background-color: #ffba24;
   color: #333;
 }
