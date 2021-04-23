@@ -362,6 +362,9 @@ body .main-wrapper .heading-section .heading-container #nameLogo .firstword {
     padding: 2vw;
     bottom: 0;
   }
+  body .contact-wrapper #contact-form #message-wrapper #message-textarea {
+    height: 10vh;
+  }
   body .desktop-content {
     display: none;
   }

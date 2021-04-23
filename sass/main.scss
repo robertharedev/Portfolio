@@ -421,6 +421,8 @@ body {
             }
         }
 
+        .contact-wrapper #contact-form #message-wrapper #message-textarea { height: 10vh; }
+
         .desktop-content { display: none; }
         .mobile-content { display: block; }
     }
