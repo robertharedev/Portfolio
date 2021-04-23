@@ -35,8 +35,8 @@ html {
 // Specific font-sizes and families
 h1 { font-family: "Apercu Mono", "Inconsolata", monospace; font-size: 3vw; }
 a { font-size: 1.2vw; }
-p, label, input, textarea { font-size: 1.3vw; }
-input, textarea { font-family: 'Inconsolata', 'Space Mono', monospace; }
+p, label, input, textarea, button { font-size: 1.3vw; }
+input, textarea, button { font-family: 'Inconsolata', 'Space Mono', monospace; }
 
 #codestyle-text1 { color: $sec-colour; }
 #codestyle-text2 { color: $green-colour; }
@@ -77,10 +77,6 @@ body {
                         -moz-transition: text-decoration 0.5s ease-in-out;
                         -o-transition: text-decoration 0.5s ease-in-out;
                         transition: text-decoration 0.5s ease-in-out;
-
-                        .function-brackets {
-                            color: $orange-colour;
-                        }
 
                         &:hover {
                             text-decoration: underline wavy $orange-colour 2px;
@@ -221,7 +217,7 @@ body {
             width: 40%;
             margin-bottom: 10vh;
 
-            input, label, #message-textarea {
+            input, label, #message-textarea, button {
                 display: block;
                 border-radius: 5px;
                 padding: 5px;
@@ -286,11 +282,11 @@ body {
                 }
             }
 
-            input[type="submit"] {
+            button {
                 text-align: center;
                 padding: 10px;
                 margin: 0 auto;
-                border: 2px dashed #111;
+                border: 2px dashed #666;
                 outline: none;
 
                 &:hover {
@@ -349,6 +345,9 @@ body {
         }
     }
 
+    .function-brackets {
+        color: $orange-colour;
+    }
 
 
     @keyframes blink {
