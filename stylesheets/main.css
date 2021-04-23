@@ -277,6 +277,9 @@ body footer {
   text-align: center;
   color: #333;
 }
+body footer p {
+  padding: 2vh;
+}
 @keyframes blink {
   from, to {
     opacity: 100%;

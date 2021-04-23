@@ -331,10 +331,19 @@ body {
         text-align: center;
         color: $prim-colour;
 
+        a {
+            img {
+                //filter: ;
+            }
+        }
+
+
         p {
-            
+            padding: 2vh;
         }
     }
+
+
 
     @keyframes blink {
         from, to {
