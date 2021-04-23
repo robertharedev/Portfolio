@@ -277,8 +277,11 @@ body footer {
   text-align: center;
   color: #333;
 }
+body footer a img {
+  padding-top: 2vh;
+}
 body footer p {
-  padding: 2vh;
+  padding: 2vh 0;
 }
 @keyframes blink {
   from, to {
