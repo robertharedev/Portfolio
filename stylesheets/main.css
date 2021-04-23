@@ -243,7 +243,8 @@ body .contact-wrapper #contact-form #message-wrapper {
 }
 body .contact-wrapper #contact-form #message-wrapper #message-textarea {
   width: 100%;
-  height: 30vh;
+  height: 20vh;
+  min-height: 10vh;
   resize: vertical;
   overflow: auto;
 }
@@ -270,6 +271,17 @@ body #to-top-link {
   right: 0;
   text-decoration: none;
   margin: 0 40px 40px 0;
+  border: 2px dashed #111;
+  border-radius: 5px;
+  padding: 10px;
+}
+body #to-top-link:hover {
+  cursor: pointer;
+  background-color: #555;
+}
+body #to-top-link:active {
+  background-color: #ffba24;
+  color: #333;
 }
 body footer {
   background-color: #ffba24;
