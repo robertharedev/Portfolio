@@ -251,14 +251,18 @@ body .contact-wrapper #contact-form button {
   margin: 0 auto;
   border: 2px dashed #666;
   outline: none;
+  -webkit-transition: border 0.2s ease-in-out;
+  -moz-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
 }
 body .contact-wrapper #contact-form button:hover {
   cursor: pointer;
-  background-color: #555;
+  border: 2px dashed #ffba24;
 }
 body .contact-wrapper #contact-form button:active {
-  background-color: #ffba24;
-  color: #333;
+  background-color: #444;
+  border: 2px dashed #7dd46b;
 }
 body #to-top-link {
   display: none;
