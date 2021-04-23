@@ -286,7 +286,7 @@ body {
                 text-align: center;
                 padding: 10px;
                 margin: 0 auto;
-                border: 2px dashed #666;
+                border: 2px dashed #111;
                 outline: none;
                 -webkit-transition: border 0.2s ease-in-out;
                 -moz-transition: border 0.2s ease-in-out;
@@ -319,15 +319,19 @@ body {
         border-radius: 5px;
         padding: 10px;
         background-color: $prim-colour;
+        -webkit-transition: border 0.2s ease-in-out;
+        -moz-transition: border 0.2s ease-in-out;
+        -o-transition: border 0.2s ease-in-out;
+        transition: border 0.2s ease-in-out;
 
         &:hover {
             cursor: pointer;
-            background-color: #555;
+            border: 2px dashed $orange-colour;
         }
-
+        
         &:active {
-            background-color: $orange-colour;
-            color: $prim-colour;
+            background-color: #444;
+            border: 2px dashed $green-colour;
         }
     }
 
