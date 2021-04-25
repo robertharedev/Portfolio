@@ -391,7 +391,7 @@ body {
     @media screen and (max-width: 80em) { // vw is like the shrink/grow rate while em is like the size changer
         h1 { font-size: calc(1vw + 1.5em); }
         a { font-size: calc(0.4vw + 0.5em); }
-        p, label, input, textarea { font-size: calc(0.4vw + 0.6em); }
+        p, label, input, textarea, button { font-size: calc(0.4vw + 0.6em); }
         .contact-wrapper #contact-form { width: 80%; }
     }
 
@@ -399,7 +399,7 @@ body {
     @media screen and (min-width: 120em) { // (1em is 16px) default font-size
         h1 { font-size: 58px; } // (120 * 16) = 1920 * 0.02 because (2vw) is h1's default size
         a { font-size: 23px; } // (120 * 16) = 1920 * 0.012 because (1.2vw) is a's default size
-        p, label, input, textarea { font-size: 25px; } // (120 * 16) = 1920 * 0.013 because (1.3vw) is p's default size
+        p, label, input, textarea, button { font-size: 25px; } // (120 * 16) = 1920 * 0.013 because (1.3vw) is p's default size
         .info-section { width: 1920px; }
     }
     
