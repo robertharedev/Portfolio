@@ -122,7 +122,6 @@ body {
                     .firstword {
                         stroke: $orange-colour;
                         stroke-width: 2px;
-                        animation: fill 1s ease forwards 2.5s;
                     }
 
                     .secondword {
@@ -365,15 +364,6 @@ body {
         }
         50% {
             opacity: 0%;
-        }
-    }
-
-    @keyframes fill {
-        from {
-            fill: transparent;
-        }
-        to {
-            fill: $orange-colour;
         }
     }
 

@@ -1,8 +1,6 @@
-
 // navbar elements drop down onto page
-const navElements = document.querySelectorAll(".nav-element");
 anime({
-    targets: navElements,
+    targets: ".nav-element",
     translateY: [-200, 0],
     opacity: [0, 1],
     delay: function(el, i, l) { return (i * 200) + 1800; },
@@ -12,9 +10,8 @@ anime({
 });
 
 // line drawing animation
-const svgPath = document.querySelectorAll(".lineDraw");
 anime({
-    targets: svgPath,
+    targets: ".lineDraw",
     strokeDashoffset: [anime.setDashoffset, 0],
     delay: function(el, i) { return i * 100 }, 
     direction: "forwards",
@@ -23,29 +20,41 @@ anime({
 });
 
 // svg firstword fadein from left
-const svgFirstWordPath = document.querySelectorAll(".firstword");
 anime({
-    targets: svgFirstWordPath,
+    targets: ".firstword",
     translateX: [-150, 0], // from -300 to 0
     opacity: [0, 1],
     easing: "easeInOutSine",
-    duration: 2000
+    duration: 2000,
+    complete: () => { // On completion of this animation, call this function
+        fillFirstWord();
+    }
 });
 
+function fillFirstWord() {
+    // fill first word orange
+    anime({
+        targets: ".firstword",
+        fill: '#ffba24',
+        easing: "easeInOutSine",
+        duration: 1000,
+        direction: "forwards"
+    });
+}
+
 // svg secondword fadein from right
-const svgSecondWordPath = document.querySelectorAll(".secondword");
 anime({
-    targets: svgSecondWordPath,
+    targets: ".secondword",
     translateX: [150, 0], // from 200 to 0
     opacity: [0, 1],
     easing: "easeInOutSine",
     duration: 2000
 });
 
+
 // subheading1 fadein from above
-const subheading1Container = document.querySelector("#subheading-container-1");
 anime({
-    targets: subheading1Container,
+    targets: "#subheading-container-1",
     translateY: [-75, 0], // from 75 to 0
     opacity: [0, 1],
     easing: "easeInOutExpo",
@@ -54,9 +63,8 @@ anime({
 });
 
 // subheading2 fadein from below
-const subheading2Container = document.querySelector("#subheading-container-2");
 anime({
-    targets: subheading2Container,
+    targets: "#subheading-container-2",
     translateY: [75, 0], // from 75 to 0
     opacity: [0, 1],
     easing: "easeInOutExpo",
@@ -65,9 +73,8 @@ anime({
 });
 
 // scroll symbol fadein from above
-const scrollSymbol = document.querySelector("#scroll-symbol-container");
 anime({
-    targets: scrollSymbol,
+    targets: "#scroll-symbol-container",
     translateY: [-75, 0], // from 75 to 0
     opacity: [0, 1],
     easing: "easeInOutExpo",

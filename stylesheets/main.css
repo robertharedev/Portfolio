@@ -120,7 +120,6 @@ body .main-wrapper .heading-section .heading-container #nameLogo {
 body .main-wrapper .heading-section .heading-container #nameLogo .firstword {
   stroke: #ffba24;
   stroke-width: 2px;
-  animation: fill 1s ease forwards 2.5s;
 }
 body .main-wrapper .heading-section .heading-container #nameLogo .secondword {
   stroke: #ececec;
@@ -310,14 +309,6 @@ body .function-brackets {
   }
   50% {
     opacity: 0%;
-  }
-}
-@keyframes fill {
-  from {
-    fill: transparent;
-  }
-  to {
-    fill: #ffba24;
   }
 }
 @keyframes colourShift {
