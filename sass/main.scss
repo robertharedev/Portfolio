@@ -16,7 +16,7 @@ $header-height: 10vh;
 html {
     height: 100vh;
     width: 100vw;
-    font-family: 'Inconsolata', 'Space Mono', monospace;
+    font-family: 'Inconsolata', monospace;
     font-size: calc(1em + 1vw);
     color: $white-colour;
     animation: colourShift 2s ease forwards;
@@ -33,10 +33,10 @@ html {
 }
 
 // Specific font-sizes and families
-h1 { font-family: "Apercu Mono", "Inconsolata", monospace; font-size: 3vw; }
+h1 { font-family: 'IBM Plex Mono'; font-size: 3vw; }
 a { font-size: 1.2vw; }
 p, label, input, textarea, button { font-size: 1.3vw; }
-input, textarea, button { font-family: 'Inconsolata', 'Space Mono', monospace; }
+input, textarea, button { font-family: 'Inconsolata', monospace; }
 
 #codestyle-text1 { color: $sec-colour; }
 #codestyle-text2 { color: $green-colour; }

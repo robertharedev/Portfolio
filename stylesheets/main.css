@@ -8,7 +8,7 @@
 html {
   height: 100vh;
   width: 100vw;
-  font-family: "Inconsolata", "Space Mono", monospace;
+  font-family: "Inconsolata", monospace;
   font-size: calc(1em + 1vw);
   color: #ececec;
   animation: colourShift 2s ease forwards;
@@ -21,7 +21,7 @@ html::-webkit-scrollbar {
 }
 
 h1 {
-  font-family: "Apercu Mono", "Inconsolata", monospace;
+  font-family: "IBM Plex Mono";
   font-size: 3vw;
 }
 
@@ -34,7 +34,7 @@ p, label, input, textarea, button {
 }
 
 input, textarea, button {
-  font-family: "Inconsolata", "Space Mono", monospace;
+  font-family: "Inconsolata", monospace;
 }
 
 #codestyle-text1 {
