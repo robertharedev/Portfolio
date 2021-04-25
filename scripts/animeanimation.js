@@ -6,7 +6,7 @@ anime({
     delay: function(el, i, l) { return (i * 200) + 1800; },
     direction: "forwards",
     easing: "easeInOutExpo",
-    duration: 3000,
+    duration: 2000,
 });
 
 // line drawing animation
@@ -37,8 +37,9 @@ function fillFirstWord() {
         targets: ".firstword",
         fill: '#ffba24',
         easing: "easeInOutSine",
-        duration: 1000,
-        direction: "forwards"
+        direction: "forwards",
+        delay: function(el, i, l) { return (i * 100); },
+        duration: 1000
     });
 }
 
@@ -79,5 +80,5 @@ anime({
     opacity: [0, 1],
     easing: "easeInOutExpo",
     duration: 2000,
-    delay: 2000, 
+    delay: 3000, 
 });
