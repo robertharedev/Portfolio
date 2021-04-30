@@ -151,10 +151,11 @@ body .info-section {
   width: 100%;
 }
 body .info-section h1 {
-  display: flex;
-  justify-content: center;
   padding: 5vh 0;
   text-align: center;
+}
+body .projects-wrapper {
+  background-color: #444;
 }
 body .about-me-wrapper {
   display: inline-block;
