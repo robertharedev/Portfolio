@@ -170,7 +170,23 @@ body {
     
     .projects-wrapper {
         background-color: #444;
+        padding-bottom: 5vh;
         
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 50px;
+
+            .grid-item {
+                text-align: center;
+            }
+
+            // Changes size of grid item
+            /*.item1 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }*/
+        }
     }
     
     .about-me-wrapper {

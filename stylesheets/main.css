@@ -156,6 +156,19 @@ body .info-section h1 {
 }
 body .projects-wrapper {
   background-color: #444;
+  padding-bottom: 5vh;
+}
+body .projects-wrapper .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+  /*.item1 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+  }*/
+}
+body .projects-wrapper .grid-container .grid-item {
+  text-align: center;
 }
 body .about-me-wrapper {
   display: inline-block;
