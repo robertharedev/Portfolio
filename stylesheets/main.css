@@ -8,10 +8,11 @@
 html {
   height: 100vh;
   width: 100vw;
-  font-family: "Inconsolata", monospace;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
   font-size: calc(1em + 1vw);
   color: #ececec;
-  animation: colourShift 2s ease forwards;
+  background-color: #111;
   scroll-behavior: smooth;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -21,8 +22,8 @@ html::-webkit-scrollbar {
 }
 
 h1 {
-  font-family: "IBM Plex Mono";
   font-size: 3vw;
+  font-weight: 100;
 }
 
 a {
@@ -34,7 +35,7 @@ p, label, input, textarea, button {
 }
 
 input, textarea, button {
-  font-family: "Inconsolata", monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 #codestyle-text1 {
@@ -77,22 +78,19 @@ body header nav ul li {
 body header nav ul li a {
   color: #ececec;
   padding: 0.1em 0.2em;
-  opacity: 0.9;
-  text-decoration: none wavy #ffba24 2px;
-  -webkit-transition: text-decoration 0.5s ease-in-out;
-  -moz-transition: text-decoration 0.5s ease-in-out;
-  -o-transition: text-decoration 0.5s ease-in-out;
-  transition: text-decoration 0.5s ease-in-out;
+  text-decoration: none;
+  text-underline-offset: 10px;
+  text-decoration-color: #111;
+  -webkit-transition: text-decoration 0.1s ease-in-out;
+  -moz-transition: text-decoration 0.1s ease-in-out;
+  -o-transition: text-decoration 0.1s ease-in-out;
+  transition: text-decoration 0.1s ease-in-out;
 }
 body header nav ul li a:hover {
-  text-decoration: underline wavy #ffba24 2px;
-  text-decoration-skip-ink: none;
-  text-underline-offset: 4px;
-  opacity: 1;
+  text-decoration: underline solid #ffba24 1px;
 }
 body header nav ul li a:active {
-  color: #ffba24;
-  opacity: 1;
+  text-decoration: underline solid #7dd46b 1px;
 }
 body .main-wrapper {
   display: flex;
@@ -110,15 +108,15 @@ body .main-wrapper .heading-section .heading-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3vh 0;
+  padding: 5vh 0;
   width: 100%;
 }
 body .main-wrapper .heading-section .heading-container #nameLogo {
-  height: inherit;
+  height: 100%;
   width: 80%;
 }
 body .main-wrapper .heading-section .heading-container #nameLogo .firstword {
-  stroke: #ffba24;
+  stroke: #ececec;
   stroke-width: 2px;
 }
 body .main-wrapper .heading-section .heading-container #nameLogo .secondword {
@@ -155,7 +153,6 @@ body .info-section h1 {
   text-align: center;
 }
 body .projects-wrapper {
-  background-color: #444;
   padding-bottom: 5vh;
 }
 body .projects-wrapper .grid-container {
@@ -169,7 +166,6 @@ body .projects-wrapper .grid-container .grid-item {
 body .projects-wrapper .grid-container .grid-item a img {
   width: 300px;
   height: 300px;
-  border-radius: 10px;
 }
 body .about-me-wrapper {
   display: inline-block;
@@ -186,21 +182,15 @@ body .about-me-wrapper #about-me-section-content img {
   max-width: 60%;
   height: auto;
   float: left;
-  border-radius: 10px;
-  opacity: 0.5;
-}
-body .about-me-wrapper #about-me-section-content img:hover {
-  opacity: 1;
 }
 body .about-me-wrapper #about-me-section-content p {
   display: inline;
   position: absolute;
   right: 0;
   width: 50%;
-  background-color: rgba(32, 32, 32, 0.6);
   padding: 20px;
-  border-radius: 10px;
-  border: 4px dashed #111;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 body .contact-wrapper #contact-form {
   width: 40%;
@@ -208,13 +198,24 @@ body .contact-wrapper #contact-form {
 }
 body .contact-wrapper #contact-form input, body .contact-wrapper #contact-form label, body .contact-wrapper #contact-form #message-textarea, body .contact-wrapper #contact-form button {
   display: block;
-  border-radius: 5px;
   padding: 5px;
-  background-color: #333;
+  background-color: #111;
   color: #ececec;
 }
+body .contact-wrapper #contact-form input::-webkit-input-placeholder, body .contact-wrapper #contact-form label::-webkit-input-placeholder, body .contact-wrapper #contact-form #message-textarea::-webkit-input-placeholder, body .contact-wrapper #contact-form button::-webkit-input-placeholder {
+  font-style: italic;
+}
+body .contact-wrapper #contact-form input::-moz-placeholder, body .contact-wrapper #contact-form label::-moz-placeholder, body .contact-wrapper #contact-form #message-textarea::-moz-placeholder, body .contact-wrapper #contact-form button::-moz-placeholder {
+  font-style: italic;
+}
+body .contact-wrapper #contact-form input::-moz-placeholder, body .contact-wrapper #contact-form label::-moz-placeholder, body .contact-wrapper #contact-form #message-textarea::-moz-placeholder, body .contact-wrapper #contact-form button::-moz-placeholder {
+  font-style: italic;
+}
+body .contact-wrapper #contact-form input::-ms-input-placeholder, body .contact-wrapper #contact-form label::-ms-input-placeholder, body .contact-wrapper #contact-form #message-textarea::-ms-input-placeholder, body .contact-wrapper #contact-form button::-ms-input-placeholder {
+  font-style: italic;
+}
 body .contact-wrapper #contact-form input[type=text], body .contact-wrapper #contact-form #message-textarea {
-  border-bottom: 2px dashed #666;
+  border-bottom: 1px solid #333;
   outline: none;
   -webkit-transition: border-bottom 0.2s ease-in-out;
   -moz-transition: border-bottom 0.2s ease-in-out;
@@ -222,10 +223,10 @@ body .contact-wrapper #contact-form input[type=text], body .contact-wrapper #con
   transition: border-bottom 0.2s ease-in-out;
 }
 body .contact-wrapper #contact-form input[type=text]:hover, body .contact-wrapper #contact-form #message-textarea:hover {
-  border-bottom: 2px dashed #ffba24;
+  border-bottom: 1px solid #ffba24;
 }
 body .contact-wrapper #contact-form input[type=text]:focus, body .contact-wrapper #contact-form #message-textarea:focus {
-  border-bottom: 2px dashed #7dd46b;
+  border-bottom: 1px solid #7dd46b;
 }
 body .contact-wrapper #contact-form #full-name-wrapper {
   float: left;
@@ -263,7 +264,7 @@ body .contact-wrapper #contact-form button {
   text-align: center;
   padding: 10px;
   margin: 0 auto;
-  border: 2px dashed #111;
+  border: 1px solid #333;
   outline: none;
   -webkit-transition: border 0.1s ease-in-out;
   -moz-transition: border 0.1s ease-in-out;
@@ -272,11 +273,11 @@ body .contact-wrapper #contact-form button {
 }
 body .contact-wrapper #contact-form button:hover {
   cursor: pointer;
-  border: 2px dashed #ffba24;
+  border: 1px solid #ffba24;
 }
 body .contact-wrapper #contact-form button:active {
-  background-color: #444;
-  border: 2px dashed #7dd46b;
+  background-color: #333;
+  border: 1px solid #7dd46b;
 }
 body #to-top-link {
   display: none;
@@ -286,10 +287,9 @@ body #to-top-link {
   right: 0;
   text-decoration: none;
   margin: 0 40px 40px 0;
-  border: 2px dashed #111;
-  border-radius: 5px;
+  border: 1px solid #333;
   padding: 10px;
-  background-color: #333;
+  background-color: #111;
   -webkit-transition: border 0.1s ease-in-out;
   -moz-transition: border 0.1s ease-in-out;
   -o-transition: border 0.1s ease-in-out;
@@ -297,17 +297,17 @@ body #to-top-link {
 }
 body #to-top-link:hover {
   cursor: pointer;
-  border: 2px dashed #ffba24;
+  border: 1px solid #ffba24;
 }
 body #to-top-link:active {
-  background-color: #444;
-  border: 2px dashed #7dd46b;
+  background-color: #333;
+  border: 1px solid #7dd46b;
 }
 body footer {
   background-color: #ffba24;
   width: 100%;
   text-align: center;
-  color: #333;
+  color: #111;
 }
 body footer a img {
   padding-top: 2vh;
@@ -331,7 +331,7 @@ body .function-brackets {
     background-color: black;
   }
   to {
-    background-color: #333;
+    background-color: #111;
   }
 }
 @media screen and (max-width: 80em) {

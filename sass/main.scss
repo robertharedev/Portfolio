@@ -1,4 +1,4 @@
-$prim-colour: #333;
+$prim-colour: #111;
 $sec-colour: #43aeff;
 $white-colour: #ececec;
 $orange-colour: #ffba24;
@@ -16,10 +16,11 @@ $header-height: 10vh;
 html {
     height: 100vh;
     width: 100vw;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
     font-size: calc(1em + 1vw);
     color: $white-colour;
-    animation: colourShift 2s ease forwards;
+    background-color: $prim-colour;
     scroll-behavior: smooth;
 
     // Hide scrollbar but keep functionality
@@ -33,10 +34,10 @@ html {
 }
 
 // Specific font-sizes and families
-h1 { font-family: 'IBM Plex Mono'; font-size: 3vw; }
+h1 { font-size: 3vw; font-weight: 100; }
 a { font-size: 1.2vw; }
 p, label, input, textarea, button { font-size: 1.3vw; }
-input, textarea, button { font-family: 'Inconsolata', monospace; }
+input, textarea, button { font-family: 'Roboto Mono', monospace; }
 
 #codestyle-text1 { color: $sec-colour; }
 #codestyle-text2 { color: $green-colour; }
@@ -71,23 +72,20 @@ body {
                     a {
                         color: $white-colour;
                         padding: 0.1em 0.2em;
-                        opacity: 0.9;
-                        text-decoration: none wavy $orange-colour 2px; // so the colour fades from orange instead of from white when it transitions on hover
-                        -webkit-transition: text-decoration 0.5s ease-in-out;
-                        -moz-transition: text-decoration 0.5s ease-in-out;
-                        -o-transition: text-decoration 0.5s ease-in-out;
-                        transition: text-decoration 0.5s ease-in-out;
+                        text-decoration: none;
+                        text-underline-offset: 10px;
+                        text-decoration-color: $prim-colour;
+                        -webkit-transition: text-decoration 0.1s ease-in-out;
+                        -moz-transition: text-decoration 0.1s ease-in-out;
+                        -o-transition: text-decoration 0.1s ease-in-out;
+                        transition: text-decoration 0.1s ease-in-out;
 
                         &:hover {
-                            text-decoration: underline wavy $orange-colour 2px;
-                            text-decoration-skip-ink: none;
-                            text-underline-offset: 4px;
-                            opacity: 1;
+                            text-decoration: underline solid $orange-colour 1px;
                         }
         
                         &:active {
-                            color: $orange-colour;
-                            opacity: 1;
+                            text-decoration: underline solid $green-colour 1px;
                         }
                     }
                 }
@@ -112,15 +110,15 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: 3vh 0;
+                padding: 5vh 0;
                 width: 100%;
                 
                 #nameLogo {
-                    height: inherit;
+                    height: 100%;
                     width: 80%;
                     
                     .firstword {
-                        stroke: $orange-colour;
+                        stroke: $white-colour;
                         stroke-width: 2px;
                     }
 
@@ -169,7 +167,6 @@ body {
     }
     
     .projects-wrapper {
-        background-color: #444;
         padding-bottom: 5vh;
         
         .grid-container {
@@ -190,7 +187,6 @@ body {
                     img {
                         width: 300px;
                         height: 300px;
-                        border-radius: 10px;
                     }
                 }
             }
@@ -212,11 +208,9 @@ body {
                 max-width: 60%;
                 height: auto;
                 float: left;
-                border-radius: 10px;
-                opacity: 0.5;
 
                 &:hover {
-                    opacity: 1;
+                    
                 }
             }
 
@@ -225,10 +219,9 @@ body {
                 position: absolute;
                 right: 0;
                 width: 50%;
-                background-color: rgba(32, 32, 32, 0.6); // Adding alpha to only the background (not the dashed border)
                 padding: 20px;
-                border-radius: 10px;
-                border: 4px dashed #111;
+                border-top: 1px solid $white-colour;
+                border-bottom: 1px solid $white-colour;
             }
         }
     }
@@ -241,14 +234,26 @@ body {
 
             input, label, #message-textarea, button {
                 display: block;
-                border-radius: 5px;
                 padding: 5px;
                 background-color: $prim-colour;
                 color: $white-colour;
+
+                &::-webkit-input-placeholder {
+                    font-style: italic;
+                }
+                &::-moz-placeholder {
+                    font-style: italic;  
+                }
+                &::-moz-placeholder {
+                    font-style: italic;  
+                }
+                &::-ms-input-placeholder {  
+                    font-style: italic; 
+                }
             }
             
             input[type="text"], #message-textarea {
-                border-bottom: 2px dashed #666;
+                border-bottom: 1px solid #333;
                 outline: none;
                 -webkit-transition: border-bottom 0.2s ease-in-out;
                 -moz-transition: border-bottom 0.2s ease-in-out;
@@ -256,11 +261,11 @@ body {
                 transition: border-bottom 0.2s ease-in-out;
 
                 &:hover {
-                    border-bottom: 2px dashed $orange-colour;
+                    border-bottom: 1px solid $orange-colour;
                 }
 
                 &:focus {
-                    border-bottom: 2px dashed $green-colour;
+                    border-bottom: 1px solid $green-colour;
                 }
             }
 
@@ -308,7 +313,7 @@ body {
                 text-align: center;
                 padding: 10px;
                 margin: 0 auto;
-                border: 2px dashed #111;
+                border: 1px solid #333;
                 outline: none;
                 -webkit-transition: border 0.1s ease-in-out;
                 -moz-transition: border 0.1s ease-in-out;
@@ -317,12 +322,12 @@ body {
 
                 &:hover {
                     cursor: pointer;
-                    border: 2px dashed $orange-colour;
+                    border: 1px solid $orange-colour;
                 }
                 
                 &:active {
-                    background-color: #444;
-                    border: 2px dashed $green-colour;
+                    background-color: #333;
+                    border: 1px solid $green-colour;
                 }
             }
         }
@@ -337,8 +342,7 @@ body {
         right: 0;
         text-decoration: none;
         margin: 0 40px 40px 0;
-        border: 2px dashed #111;
-        border-radius: 5px;
+        border: 1px solid #333;
         padding: 10px;
         background-color: $prim-colour;
         -webkit-transition: border 0.1s ease-in-out;
@@ -348,12 +352,12 @@ body {
 
         &:hover {
             cursor: pointer;
-            border: 2px dashed $orange-colour;
+            border: 1px solid $orange-colour;
         }
         
         &:active {
-            background-color: #444;
-            border: 2px dashed $green-colour;
+            background-color: #333;
+            border: 1px solid $green-colour;
         }
     }
 

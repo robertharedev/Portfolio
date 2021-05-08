@@ -16,7 +16,7 @@ anime({
     delay: function(el, i) { return i * 100 }, 
     direction: "forwards",
     easing: "easeInOutSine",
-    duration: 2500,
+    duration: 3000,
 });
 
 // svg firstword fadein from left
@@ -35,7 +35,7 @@ function fillFirstWord() {
     // fill first word orange
     anime({
         targets: ".firstword",
-        fill: '#ffba24',
+        fill: '#ececec',
         easing: "easeInOutSine",
         direction: "forwards",
         delay: function(el, i, l) { return (i * 100); },
@@ -51,7 +51,6 @@ anime({
     easing: "easeInOutSine",
     duration: 2000
 });
-
 
 // subheading1 fadein from above
 anime({
@@ -82,3 +81,6 @@ anime({
     duration: 2000,
     delay: 3000, 
 });
+
+
+// animating project elements' thumbnails
