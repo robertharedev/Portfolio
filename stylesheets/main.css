@@ -162,13 +162,14 @@ body .projects-wrapper .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 50px;
-  /*.item1 {
-      grid-column-start: 1;
-      grid-column-end: 3;
-  }*/
 }
 body .projects-wrapper .grid-container .grid-item {
   text-align: center;
+}
+body .projects-wrapper .grid-container .grid-item a img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
 }
 body .about-me-wrapper {
   display: inline-block;
@@ -264,10 +265,10 @@ body .contact-wrapper #contact-form button {
   margin: 0 auto;
   border: 2px dashed #111;
   outline: none;
-  -webkit-transition: border 0.2s ease-in-out;
-  -moz-transition: border 0.2s ease-in-out;
-  -o-transition: border 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out;
+  -webkit-transition: border 0.1s ease-in-out;
+  -moz-transition: border 0.1s ease-in-out;
+  -o-transition: border 0.1s ease-in-out;
+  transition: border 0.1s ease-in-out;
 }
 body .contact-wrapper #contact-form button:hover {
   cursor: pointer;
@@ -289,10 +290,10 @@ body #to-top-link {
   border-radius: 5px;
   padding: 10px;
   background-color: #333;
-  -webkit-transition: border 0.2s ease-in-out;
-  -moz-transition: border 0.2s ease-in-out;
-  -o-transition: border 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out;
+  -webkit-transition: border 0.1s ease-in-out;
+  -moz-transition: border 0.1s ease-in-out;
+  -o-transition: border 0.1s ease-in-out;
+  transition: border 0.1s ease-in-out;
 }
 body #to-top-link:hover {
   cursor: pointer;
