@@ -35,7 +35,7 @@ function fillFirstWord() {
     // fill first word orange
     anime({
         targets: ".firstword",
-        fill: '#ececec',
+        fill: '#ffba24',
         easing: "easeInOutSine",
         direction: "forwards",
         delay: function(el, i, l) { return (i * 100); },

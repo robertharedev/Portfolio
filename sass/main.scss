@@ -118,7 +118,7 @@ body {
                     width: 80%;
                     
                     .firstword {
-                        stroke: $white-colour;
+                        stroke: $orange-colour;
                         stroke-width: 2px;
                     }
 
@@ -367,16 +367,38 @@ body {
         width: 100%;
         text-align: center;
         color: $prim-colour;
+        padding: 4vh;
 
         a {
+            display: inline-block;
+            position: relative;
+            text-decoration: none;
+            border-radius: 50%;
+            border: 2px solid $prim-colour;
+            transition: 0.1s;
+
             img {
-                padding-top: 2vh;
+                display: block;
+                padding: 10px;
+            }
+            
+            .hover-image {
+                position: absolute;
+                top: 0;
+                opacity: 0;
+            }
+
+            &:hover {
+                background-color: $prim-colour;
+            }
+
+            &:hover .hover-image {
+                opacity: 1;
             }
         }
 
-
         p {
-            padding: 2vh 0;
+            padding-top: 2vh;
         }
     }
 
@@ -410,7 +432,6 @@ body {
         a { font-size: calc(0.4vw + 0.5em); }
         p, label, input, textarea, button { font-size: calc(0.4vw + 0.6em); }
         .contact-wrapper #contact-form { width: 80%; }
-        footer img { width: 32px; height: auto;}
     }
 
     // when vw is 120em or over (>= 1920px)
@@ -464,5 +485,4 @@ body {
         .desktop-content { display: none; }
         .mobile-content { display: none; }
     }
-
 }

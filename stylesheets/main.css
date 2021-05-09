@@ -116,7 +116,7 @@ body .main-wrapper .heading-section .heading-container #nameLogo {
   width: 80%;
 }
 body .main-wrapper .heading-section .heading-container #nameLogo .firstword {
-  stroke: #ececec;
+  stroke: #ffba24;
   stroke-width: 2px;
 }
 body .main-wrapper .heading-section .heading-container #nameLogo .secondword {
@@ -308,12 +308,33 @@ body footer {
   width: 100%;
   text-align: center;
   color: #111;
+  padding: 4vh;
+}
+body footer a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 2px solid #111;
+  transition: 0.1s;
 }
 body footer a img {
-  padding-top: 2vh;
+  display: block;
+  padding: 10px;
+}
+body footer a .hover-image {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+body footer a:hover {
+  background-color: #111;
+}
+body footer a:hover .hover-image {
+  opacity: 1;
 }
 body footer p {
-  padding: 2vh 0;
+  padding-top: 2vh;
 }
 body .function-brackets {
   color: #ffba24;
@@ -346,10 +367,6 @@ body .function-brackets {
   }
   body .contact-wrapper #contact-form {
     width: 80%;
-  }
-  body footer img {
-    width: 32px;
-    height: auto;
   }
 }
 @media screen and (min-width: 120em) {
