@@ -81,6 +81,3 @@ anime({
     duration: 2000,
     delay: 3000, 
 });
-
-
-// animating project elements' thumbnails

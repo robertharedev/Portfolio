@@ -253,7 +253,7 @@ body {
             }
             
             input[type="text"], #message-textarea {
-                border-bottom: 1px solid #333;
+                border-bottom: 1px dashed #333;
                 outline: none;
                 -webkit-transition: border-bottom 0.2s ease-in-out;
                 -moz-transition: border-bottom 0.2s ease-in-out;
@@ -261,11 +261,11 @@ body {
                 transition: border-bottom 0.2s ease-in-out;
 
                 &:hover {
-                    border-bottom: 1px solid $orange-colour;
+                    border-bottom: 1px dashed $white-colour;
                 }
 
                 &:focus {
-                    border-bottom: 1px solid $green-colour;
+                    border-bottom: 1px solid $orange-colour;
                 }
             }
 
@@ -327,7 +327,6 @@ body {
                 
                 &:active {
                     background-color: #333;
-                    border: 1px solid $green-colour;
                 }
             }
         }
@@ -357,7 +356,6 @@ body {
         
         &:active {
             background-color: #333;
-            border: 1px solid $green-colour;
         }
     }
 

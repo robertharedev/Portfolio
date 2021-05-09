@@ -215,7 +215,7 @@ body .contact-wrapper #contact-form input::-ms-input-placeholder, body .contact-
   font-style: italic;
 }
 body .contact-wrapper #contact-form input[type=text], body .contact-wrapper #contact-form #message-textarea {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px dashed #333;
   outline: none;
   -webkit-transition: border-bottom 0.2s ease-in-out;
   -moz-transition: border-bottom 0.2s ease-in-out;
@@ -223,10 +223,10 @@ body .contact-wrapper #contact-form input[type=text], body .contact-wrapper #con
   transition: border-bottom 0.2s ease-in-out;
 }
 body .contact-wrapper #contact-form input[type=text]:hover, body .contact-wrapper #contact-form #message-textarea:hover {
-  border-bottom: 1px solid #ffba24;
+  border-bottom: 1px dashed #ececec;
 }
 body .contact-wrapper #contact-form input[type=text]:focus, body .contact-wrapper #contact-form #message-textarea:focus {
-  border-bottom: 1px solid #7dd46b;
+  border-bottom: 1px solid #ffba24;
 }
 body .contact-wrapper #contact-form #full-name-wrapper {
   float: left;
@@ -277,7 +277,6 @@ body .contact-wrapper #contact-form button:hover {
 }
 body .contact-wrapper #contact-form button:active {
   background-color: #333;
-  border: 1px solid #7dd46b;
 }
 body #to-top-link {
   display: none;
@@ -301,7 +300,6 @@ body #to-top-link:hover {
 }
 body #to-top-link:active {
   background-color: #333;
-  border: 1px solid #7dd46b;
 }
 body footer {
   background-color: #ffba24;
