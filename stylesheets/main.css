@@ -138,7 +138,7 @@ body .main-wrapper #scroll-symbol-container {
   align-items: flex-end;
   position: absolute;
   bottom: 0;
-  padding: 0 0 5vh 0;
+  padding-bottom: 5vh;
   stroke-width: 0.75px;
 }
 body .info-section {
@@ -147,21 +147,21 @@ body .info-section {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  padding: 5vh;
 }
 body .info-section h1 {
-  padding: 5vh 0;
-  text-align: center;
-}
-body .projects-wrapper {
   padding-bottom: 5vh;
+  text-align: center;
 }
 body .projects-wrapper .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 50px;
+  grid-template-columns: repeat(3, minmax(310px, 1fr));
+  gap: 1.4vh;
+  max-width: 90%;
 }
 body .projects-wrapper .grid-container .grid-item {
   text-align: center;
+  list-style: none;
 }
 body .projects-wrapper .grid-container .grid-item a img {
   width: 300px;
@@ -355,7 +355,7 @@ body .function-brackets {
 }
 @media screen and (max-width: 80em) {
   body h1 {
-    font-size: calc(1vw + 1.5em);
+    font-size: calc(1vw + 2em);
   }
   body a {
     font-size: calc(0.4vw + 0.5em);
@@ -365,6 +365,9 @@ body .function-brackets {
   }
   body .contact-wrapper #contact-form {
     width: 80%;
+  }
+  body .projects-wrapper .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   }
 }
 @media screen and (min-width: 120em) {
