@@ -107,6 +107,10 @@ body {
             color: $orange-colour;
             font-size: calc(0.02em + 0.5vw);
         }
+
+        #text-cursor {
+            animation: 1s blink step-end infinite;
+        }
     }
 
     // MAIN CONTENT #########################################################################################

@@ -106,6 +106,9 @@ body #vertical-text a {
   color: #ffba24;
   font-size: calc(0.02em + 0.5vw);
 }
+body #vertical-text #text-cursor {
+  animation: 1s blink step-end infinite;
+}
 body .main-wrapper {
   display: flex;
   flex-direction: column;
