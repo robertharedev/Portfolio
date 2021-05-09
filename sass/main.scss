@@ -93,6 +93,22 @@ body {
         }
     }
 
+    // styled text
+    #vertical-text {
+        transform: rotateZ(-90deg);
+        position: absolute;
+        bottom: 25%;
+        left: -7%;
+        
+        p { font-size: calc(0.02em + 0.5vw); }
+
+        a {
+            text-decoration: none;
+            color: $orange-colour;
+            font-size: calc(0.02em + 0.5vw);
+        }
+    }
+
     // MAIN CONTENT #########################################################################################
     .main-wrapper {
         display: flex;
@@ -358,6 +374,9 @@ body {
                     transform: translateY(-50%);
                     border-radius: 50%;
                     border: 2px solid #333;
+                    -webkit-transition: 0.1s ease-in-out;
+                    -moz-transition: 0.1s ease-in-out;
+                    -o-transition: 0.1s ease-in-out;
                     transition: 0.1s ease-in-out;
 
                     &:hover {

@@ -92,6 +92,20 @@ body header nav ul li a:hover {
 body header nav ul li a:active {
   text-decoration: underline solid #7dd46b 1px;
 }
+body #vertical-text {
+  transform: rotateZ(-90deg);
+  position: absolute;
+  bottom: 25%;
+  left: -7%;
+}
+body #vertical-text p {
+  font-size: calc(0.02em + 0.5vw);
+}
+body #vertical-text a {
+  text-decoration: none;
+  color: #ffba24;
+  font-size: calc(0.02em + 0.5vw);
+}
 body .main-wrapper {
   display: flex;
   flex-direction: column;
@@ -301,6 +315,9 @@ body #nav-dot-container ul li a {
   transform: translateY(-50%);
   border-radius: 50%;
   border: 2px solid #333;
+  -webkit-transition: 0.1s ease-in-out;
+  -moz-transition: 0.1s ease-in-out;
+  -o-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
 }
 body #nav-dot-container ul li a:hover {
