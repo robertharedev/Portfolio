@@ -334,6 +334,47 @@ body {
         }
     }
 
+    // Navigation dots
+    #nav-dot-container {
+        position: fixed;
+        right: 0;
+        top: 50%;
+        width: 50px;
+        transform: translateY(-50%);
+        padding-right: 8vh;
+        
+        ul {
+            display: table-row;
+
+            li {
+                height: 4vh;
+                line-height: 10px;
+
+                a {
+                    content: '';
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                    border: 2px solid #333;
+                    transition: 0.1s ease-in-out;
+
+                    &:hover {
+                        border: 2px solid $white-colour;
+                    }
+
+                    &:active {
+                        border: 2px solid $white-colour;
+                        background-color: $white-colour;
+                    }
+                }
+            }
+        }
+        
+        
+    }
+
     // TOP OF PAGE LINK ###############################################################################
     #to-top-link {
         display: none; // hide by default

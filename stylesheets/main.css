@@ -278,6 +278,38 @@ body .contact-wrapper #contact-form button:hover {
 body .contact-wrapper #contact-form button:active {
   background-color: #333;
 }
+body #nav-dot-container {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 50px;
+  transform: translateY(-50%);
+  padding-right: 8vh;
+}
+body #nav-dot-container ul {
+  display: table-row;
+}
+body #nav-dot-container ul li {
+  height: 4vh;
+  line-height: 10px;
+}
+body #nav-dot-container ul li a {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 2px solid #333;
+  transition: 0.1s ease-in-out;
+}
+body #nav-dot-container ul li a:hover {
+  border: 2px solid #ececec;
+}
+body #nav-dot-container ul li a:active {
+  border: 2px solid #ececec;
+  background-color: #ececec;
+}
 body #to-top-link {
   display: none;
   color: #ececec;
