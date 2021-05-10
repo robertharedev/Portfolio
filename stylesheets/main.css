@@ -232,7 +232,7 @@ body .contact-wrapper #contact-form input::-ms-input-placeholder, body .contact-
   font-style: italic;
 }
 body .contact-wrapper #contact-form input[type=text], body .contact-wrapper #contact-form #message-textarea {
-  border-bottom: 1px dashed #555;
+  border-bottom: 1px solid #555;
   outline: none;
   -webkit-transition: border-bottom 0.2s ease-in-out;
   -moz-transition: border-bottom 0.2s ease-in-out;
@@ -240,7 +240,7 @@ body .contact-wrapper #contact-form input[type=text], body .contact-wrapper #con
   transition: border-bottom 0.2s ease-in-out;
 }
 body .contact-wrapper #contact-form input[type=text]:hover, body .contact-wrapper #contact-form #message-textarea:hover {
-  border-bottom: 1px dashed #ececec;
+  border-bottom: 1px solid #ececec;
 }
 body .contact-wrapper #contact-form input[type=text]:focus, body .contact-wrapper #contact-form #message-textarea:focus {
   border-bottom: 1px solid #ffba24;
@@ -294,6 +294,16 @@ body .contact-wrapper #contact-form button:hover {
 }
 body .contact-wrapper #contact-form button:active {
   background-color: #333;
+}
+body .contact-wrapper #contact-form .required-fields-asterisk {
+  font-size: calc(0.5vw + 0.5em);
+  color: #ffba24;
+}
+body .contact-wrapper #contact-form #required-fields-text {
+  font-size: calc(0.5vw + 0.2em);
+  color: #ffba24;
+  display: block;
+  float: right;
 }
 body #nav-dot-container {
   position: fixed;
@@ -397,14 +407,6 @@ body .function-brackets {
     opacity: 0%;
   }
 }
-@keyframes colourShift {
-  from {
-    background-color: black;
-  }
-  to {
-    background-color: #111;
-  }
-}
 @media screen and (max-width: 80em) {
   body h1 {
     font-size: calc(1vw + 2em);
@@ -440,6 +442,9 @@ body .function-brackets {
   body .mobile-content {
     display: none;
   }
+  body .desktop-content {
+    display: block;
+  }
 }
 @media screen and (max-width: 50em) {
   body .subheading-container {
@@ -466,8 +471,17 @@ body .main-wrapper .heading-section .heading-container #nameLogo .firstword {
     padding: 2vw;
     bottom: 0;
   }
+  body .contact-wrapper #contact-form {
+    width: 90vw;
+  }
   body .contact-wrapper #contact-form #message-wrapper #message-textarea {
     height: 10vh;
+  }
+  body .contact-wrapper #contact-form #required-fields-text {
+    font-size: calc(1vw + 0.2em);
+  }
+  body .contact-wrapper #contact-form #required-fields-asterisk {
+    font-size: calc(1vw + 0.5em);
   }
   body .desktop-content {
     display: none;

@@ -148,22 +148,23 @@
             <input type="hidden" name="_subject" value="New Message - robertharedev"> <!-- Email subject -->
 
             <div id="full-name-wrapper">
-                <label for="full-name">Full name</label>
-                <input type="text" id="full-name" placeholder="What should I call you?" name="name" required>
+                <label for="full-name">Full name<span class="required-fields-asterisk">*</span></label>
+                <input type="text" id="full-name" placeholder="E.g: Morty Smith" name="name" required>
             </div>
             <div id="email-wrapper">
-                <label for="email">Email</label>
+                <label for="email">Email<span class="required-fields-asterisk">*</span></label>
                 <input type="text" id="email" placeholder="So I can respond." name="email" required>
             </div>
             <br style="clear: both;">
             <div id="subject-wrapper">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" placeholder="What's it about?" name="subject" required>
+                <label for="subject">Subject<span class="required-fields-asterisk">*</span></label>
+                <input type="text" id="subject" placeholder="The topic." name="subject" required>
             </div>
             <div id="message-wrapper">
-                <label for="message-textarea">Message</label>
-                <textarea type="text" id="message-textarea" placeholder="For me to read!" name="message" required></textarea>
+                <label for="message-textarea">Message<span class="required-fields-asterisk">*</span></label>
+                <textarea type="text" id="message-textarea" placeholder="The good!" name="message" required></textarea>
             </div>
+            <p id="required-fields-text"><span class="required-fields-asterisk">*</span>Required fields</p>
             <br>
             <button type="submit">send<span class="function-brackets">()</span></button>
         </form>

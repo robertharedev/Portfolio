@@ -275,7 +275,7 @@ body {
             }
             
             input[type="text"], #message-textarea {
-                border-bottom: 1px dashed #555;
+                border-bottom: 1px solid #555;
                 outline: none;
                 -webkit-transition: border-bottom 0.2s ease-in-out;
                 -moz-transition: border-bottom 0.2s ease-in-out;
@@ -283,7 +283,7 @@ body {
                 transition: border-bottom 0.2s ease-in-out;
 
                 &:hover {
-                    border-bottom: 1px dashed $white-colour;
+                    border-bottom: 1px solid $white-colour;
                 }
 
                 &:focus {
@@ -350,6 +350,18 @@ body {
                 &:active {
                     background-color: #333;
                 }
+            }
+
+            .required-fields-asterisk {
+                font-size: calc(0.5vw + 0.5em);
+                color: $orange-colour;
+            }
+
+            #required-fields-text {
+                font-size: calc(0.5vw + 0.2em);
+                color: $orange-colour;
+                display: block;
+                float: right;
             }
         }
     }
@@ -480,15 +492,6 @@ body {
         }
     }
 
-    @keyframes colourShift {
-        from {
-            background-color: black;
-        }
-        to {
-            background-color: $prim-colour;
-        }
-    }
-
     // RESIZING ELEMENTS BASED ON VIEWPORT #################################################################
     // when vw is under 80em
     @media screen and (max-width: 80em) { // vw is like the shrink/grow rate while em is like the size changer
@@ -510,6 +513,7 @@ body {
     // if on desktop (wider screen)
     @media screen and (min-width: 50em) {
         .mobile-content { display: none; }
+        .desktop-content { display: block; }
     }
 
     // if screen is narrow (mobile)
@@ -539,7 +543,13 @@ body {
             }
         }
 
-        .contact-wrapper #contact-form #message-wrapper #message-textarea { height: 10vh; }
+        .contact-wrapper #contact-form {
+            width: 90vw;
+
+            #message-wrapper #message-textarea { height: 10vh; }
+            #required-fields-text { font-size: calc(1vw + 0.2em); }
+            #required-fields-asterisk { font-size: calc(1vw + 0.5em); }
+        }
 
         .desktop-content { display: none; }
         .mobile-content { display: block; }
