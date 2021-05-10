@@ -232,7 +232,7 @@ body .contact-wrapper #contact-form input::-ms-input-placeholder, body .contact-
   font-style: italic;
 }
 body .contact-wrapper #contact-form input[type=text], body .contact-wrapper #contact-form #message-textarea {
-  border-bottom: 1px dashed #333;
+  border-bottom: 1px dashed #555;
   outline: none;
   -webkit-transition: border-bottom 0.2s ease-in-out;
   -moz-transition: border-bottom 0.2s ease-in-out;
@@ -281,7 +281,7 @@ body .contact-wrapper #contact-form button {
   text-align: center;
   padding: 10px;
   margin: 0 auto;
-  border: 1px solid #333;
+  border: 1px solid #555;
   outline: none;
   -webkit-transition: border 0.1s ease-in-out;
   -moz-transition: border 0.1s ease-in-out;
@@ -317,7 +317,7 @@ body #nav-dot-container ul li a {
   height: 20px;
   transform: translateY(-50%);
   border-radius: 50%;
-  border: 2px solid #333;
+  border: 2px solid #555;
   -webkit-transition: 0.1s ease-in-out;
   -moz-transition: 0.1s ease-in-out;
   -o-transition: 0.1s ease-in-out;
@@ -338,7 +338,7 @@ body #to-top-link {
   right: 0;
   text-decoration: none;
   margin: 0 40px 40px 0;
-  border: 1px solid #333;
+  border: 1px solid #555;
   padding: 10px;
   background-color: #111;
   -webkit-transition: border 0.1s ease-in-out;

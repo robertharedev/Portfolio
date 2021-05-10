@@ -275,7 +275,7 @@ body {
             }
             
             input[type="text"], #message-textarea {
-                border-bottom: 1px dashed #333;
+                border-bottom: 1px dashed #555;
                 outline: none;
                 -webkit-transition: border-bottom 0.2s ease-in-out;
                 -moz-transition: border-bottom 0.2s ease-in-out;
@@ -335,7 +335,7 @@ body {
                 text-align: center;
                 padding: 10px;
                 margin: 0 auto;
-                border: 1px solid #333;
+                border: 1px solid #555;
                 outline: none;
                 -webkit-transition: border 0.1s ease-in-out;
                 -moz-transition: border 0.1s ease-in-out;
@@ -354,7 +354,7 @@ body {
         }
     }
 
-    // Navigation dots
+    // Navigation dots #########################################
     #nav-dot-container {
         position: fixed;
         right: 0;
@@ -377,7 +377,7 @@ body {
                     height: 20px;
                     transform: translateY(-50%);
                     border-radius: 50%;
-                    border: 2px solid #333;
+                    border: 2px solid #555;
                     -webkit-transition: 0.1s ease-in-out;
                     -moz-transition: 0.1s ease-in-out;
                     -o-transition: 0.1s ease-in-out;
@@ -407,7 +407,7 @@ body {
         right: 0;
         text-decoration: none;
         margin: 0 40px 40px 0;
-        border: 1px solid #333;
+        border: 1px solid #555;
         padding: 10px;
         background-color: $prim-colour;
         -webkit-transition: border 0.1s ease-in-out;
