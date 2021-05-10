@@ -85,7 +85,7 @@ body {
                         }
         
                         &:active {
-                            text-decoration: underline solid $green-colour 1px;
+                            color: $orange-colour;
                         }
                     }
                 }
