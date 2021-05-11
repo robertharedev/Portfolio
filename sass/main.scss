@@ -70,23 +70,12 @@ body {
                     padding: 0 0.3em;
                     
                     a {
-                        color: $white-colour;
+                        color: #999;
                         padding: 0.1em 0.2em;
                         text-decoration: none;
                         text-underline-offset: 10px;
                         text-decoration-color: $prim-colour;
-                        -webkit-transition: text-decoration 0.1s ease-in-out;
-                        -moz-transition: text-decoration 0.1s ease-in-out;
-                        -o-transition: text-decoration 0.1s ease-in-out;
                         transition: text-decoration 0.1s ease-in-out;
-
-                        &:hover {
-                            text-decoration: underline solid $orange-colour 1px;
-                        }
-        
-                        &:active {
-                            color: $orange-colour;
-                        }
                     }
                 }
             }

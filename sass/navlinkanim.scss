@@ -1,0 +1,53 @@
+$prim-colour: #111;
+$white-colour: #ececec;
+$orange-colour: #ffba24;
+$blue-colour: #43aeff;
+
+// nav element hover effect
+.nav-element {
+    position: relative;
+    z-index: 1;
+
+    a {
+        -webkit-transition: color 0.3s;
+	    -moz-transition: color 0.3s;
+	    transition: color 0.3s;
+
+        &::before, &::after {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 50%;
+            height: 1px;
+            margin-top: 2px;
+            background: #555;
+            content: '';
+            z-index: -1;
+            -webkit-transition: -webkit-transform 0.3s, background-color 0.3s, opacity 0.3s;
+	        -moz-transition: -moz-transform 0.3s, background-color 0.3s, opacity 0.3s;
+	        transition: transform 0.3s, background-color 0.3s, opacity 0.3s;
+            pointer-events: none;
+        }
+
+        &:hover, &:focus {
+            color: $white-colour;
+
+            &::before, &::after {
+                opacity: 0.7;
+                background: $orange-colour;
+            }
+
+            &::before {
+                -webkit-transform: rotate(20deg);
+	            -moz-transform: rotate(20deg);
+	            transform: rotate(20deg);
+            }
+
+            &::after {
+                -webkit-transform: rotate(-20deg);
+	            -moz-transform: rotate(-20deg);
+	            transform: rotate(-20deg);
+            }
+        }
+    }
+}

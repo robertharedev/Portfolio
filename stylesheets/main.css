@@ -76,21 +76,12 @@ body header nav ul li {
   padding: 0 0.3em;
 }
 body header nav ul li a {
-  color: #ececec;
+  color: #999;
   padding: 0.1em 0.2em;
   text-decoration: none;
   text-underline-offset: 10px;
   text-decoration-color: #111;
-  -webkit-transition: text-decoration 0.1s ease-in-out;
-  -moz-transition: text-decoration 0.1s ease-in-out;
-  -o-transition: text-decoration 0.1s ease-in-out;
   transition: text-decoration 0.1s ease-in-out;
-}
-body header nav ul li a:hover {
-  text-decoration: underline solid #ffba24 1px;
-}
-body header nav ul li a:active {
-  color: #ffba24;
 }
 body #vertical-text {
   transform: rotateZ(-90deg);

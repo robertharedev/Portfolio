@@ -1,0 +1,43 @@
+.nav-element {
+  position: relative;
+  z-index: 1;
+}
+.nav-element a {
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.nav-element a::before, .nav-element a::after {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  height: 1px;
+  margin-top: 2px;
+  background: #555;
+  content: "";
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s, background-color 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, background-color 0.3s, opacity 0.3s;
+  transition: transform 0.3s, background-color 0.3s, opacity 0.3s;
+  pointer-events: none;
+}
+.nav-element a:hover, .nav-element a:focus {
+  color: #ececec;
+}
+.nav-element a:hover::before, .nav-element a:hover::after, .nav-element a:focus::before, .nav-element a:focus::after {
+  opacity: 0.7;
+  background: #ffba24;
+}
+.nav-element a:hover::before, .nav-element a:focus::before {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+.nav-element a:hover::after, .nav-element a:focus::after {
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+/*# sourceMappingURL=navlinkanim.css.map */
