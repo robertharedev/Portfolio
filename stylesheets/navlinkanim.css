@@ -1,11 +1,10 @@
 .nav-element {
   position: relative;
-  z-index: 1;
 }
 .nav-element a {
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  transition: color 0.3s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  transition: color 0.2s;
 }
 .nav-element a::before, .nav-element a::after {
   position: absolute;
@@ -16,19 +15,24 @@
   margin-top: 2px;
   background: #555;
   content: "";
-  z-index: -1;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
   pointer-events: none;
+  opacity: 0;
 }
 .nav-element a:hover, .nav-element a:focus {
   color: #ececec;
 }
 .nav-element a:hover::before, .nav-element a:hover::after, .nav-element a:focus::before, .nav-element a:focus::after {
-  opacity: 0.7;
+  opacity: 1;
   background: #ffba24;
   height: 2px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  left: calc(50% - 4px);
+  top: 50%;
 }
 .nav-element a:hover::before, .nav-element a:focus::before {
   -webkit-transform: translateY(-1em);

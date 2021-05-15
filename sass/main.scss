@@ -83,7 +83,7 @@ body {
     }
 
     // styled text
-    #vertical-text {
+    /*#vertical-text {
         transform: rotateZ(-90deg);
         position: absolute;
         bottom: 25%;
@@ -100,7 +100,7 @@ body {
         #text-cursor {
             animation: 1s blink step-end infinite;
         }
-    }
+    }*/
 
     // MAIN CONTENT #########################################################################################
     .main-wrapper {
@@ -110,6 +110,7 @@ body {
         align-items: center;
         height: 100vh - $header-height;
         position: relative;
+        width: 80%;
         
         .heading-section {
             position: relative;
@@ -120,7 +121,6 @@ body {
                 justify-content: center;
                 align-items: center;
                 padding: 5vh 0;
-                width: 100%;
                 
                 #nameLogo {
                     height: 100%;

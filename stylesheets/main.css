@@ -59,6 +59,24 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /*#vertical-text {
+      transform: rotateZ(-90deg);
+      position: absolute;
+      bottom: 25%;
+      left: -7%;
+
+      p { font-size: calc(0.02em + 0.5vw); }
+
+      a {
+          text-decoration: none;
+          color: $orange-colour;
+          font-size: calc(0.02em + 0.5vw);
+      }
+
+      #text-cursor {
+          animation: 1s blink step-end infinite;
+      }
+  }*/
 }
 body header {
   display: flex;
@@ -83,23 +101,6 @@ body header nav ul li a {
   text-decoration-color: #111;
   transition: text-decoration 0.1s ease-in-out;
 }
-body #vertical-text {
-  transform: rotateZ(-90deg);
-  position: absolute;
-  bottom: 25%;
-  left: -7%;
-}
-body #vertical-text p {
-  font-size: calc(0.02em + 0.5vw);
-}
-body #vertical-text a {
-  text-decoration: none;
-  color: #ffba24;
-  font-size: calc(0.02em + 0.5vw);
-}
-body #vertical-text #text-cursor {
-  animation: 1s blink step-end infinite;
-}
 body .main-wrapper {
   display: flex;
   flex-direction: column;
@@ -107,6 +108,7 @@ body .main-wrapper {
   align-items: center;
   height: 90vh;
   position: relative;
+  width: 80%;
 }
 body .main-wrapper .heading-section {
   position: relative;
@@ -117,7 +119,6 @@ body .main-wrapper .heading-section .heading-container {
   justify-content: center;
   align-items: center;
   padding: 5vh 0;
-  width: 100%;
 }
 body .main-wrapper .heading-section .heading-container #nameLogo {
   height: 100%;
