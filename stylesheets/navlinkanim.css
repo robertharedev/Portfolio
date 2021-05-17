@@ -8,41 +8,30 @@
 }
 .nav-element a::before, .nav-element a::after {
   position: absolute;
-  width: 100%;
-  left: 0;
-  top: 50%;
-  height: 1px;
-  margin-top: 2px;
-  background: #555;
+  width: 0;
+  left: 50%;
+  pointer-events: none;
+  opacity: 0.8;
+  background: #ffba24;
   content: "";
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   transition: 0.2s;
-  pointer-events: none;
-  opacity: 0;
+}
+.nav-element a::before {
+  top: calc(-5px);
+}
+.nav-element a::after {
+  top: calc(100% + 5px);
 }
 .nav-element a:hover, .nav-element a:focus {
   color: #ececec;
 }
 .nav-element a:hover::before, .nav-element a:hover::after, .nav-element a:focus::before, .nav-element a:focus::after {
-  opacity: 1;
   background: #ffba24;
-  height: 2px;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  left: calc(50% - 4px);
-  top: 50%;
-}
-.nav-element a:hover::before, .nav-element a:focus::before {
-  -webkit-transform: translateY(-1em);
-  -moz-transform: translateY(-1em);
-  transform: translateY(-1em);
-}
-.nav-element a:hover::after, .nav-element a:focus::after {
-  -webkit-transform: translateY(0.8em);
-  -moz-transform: translateY(0.8em);
-  transform: translateY(0.8em);
+  height: 1px;
+  width: 80%;
+  left: 9%;
 }
 
 /*# sourceMappingURL=navlinkanim.css.map */

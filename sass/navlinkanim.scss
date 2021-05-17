@@ -14,44 +14,36 @@ $blue-colour: #43aeff;
 
         &::before, &::after {
             position: absolute;
-            width: 100%;
-            left: 0;
-            top: 50%;
-            height: 1px;
-            margin-top: 2px;
-            background: #555;
+            width: 0;
+            left: 50%;
+            pointer-events: none;
+            opacity: 0.8;
+            background: $orange-colour;
             content: '';
             -webkit-transition: 0.2s;
 	        -moz-transition: 0.2s;
 	        transition: 0.2s;
-            pointer-events: none;
-            opacity: 0;
         }
+
+        &::before { top: calc(-5px); }
+        &::after  { top: calc(100% + 5px); }
         
         &:hover, &:focus {
             color: $white-colour;
             
             &::before, &::after {
-                opacity: 1;
                 background: $orange-colour;
-                height: 2px;
-                width: 4px;
-                height: 4px;
-                border-radius: 50%;
-                left: calc(50% - 4px);
-                top: 50%;
+                height: 1px;
+                width: 80%;
+                left: 9%;
             }
 
             &::before {
-                -webkit-transform: translateY(-1em);
-	            -moz-transform: translateY(-1em);
-	            transform: translateY(-1em);
+                
             }
 
             &::after {
-                -webkit-transform: translateY(0.8em);
-	            -moz-transform: translateY(0.8em);
-	            transform: translateY(0.8em);
+                
             }
         }
     }
