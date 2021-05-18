@@ -9,14 +9,15 @@
 .nav-element a::before, .nav-element a::after {
   position: absolute;
   width: 0;
+  height: 1px;
   left: 50%;
   pointer-events: none;
   opacity: 0.8;
-  background: #ffba24;
+  background-color: #ffba24;
   content: "";
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: left 0.15s, width 0.15s;
+  -moz-transition: left 0.15s, width 0.15s;
+  transition: left 0.15s, width 0.15s;
 }
 .nav-element a::before {
   top: calc(-5px);
@@ -28,8 +29,6 @@
   color: #ececec;
 }
 .nav-element a:hover::before, .nav-element a:hover::after, .nav-element a:focus::before, .nav-element a:focus::after {
-  background: #ffba24;
-  height: 1px;
   width: 80%;
   left: 9%;
 }

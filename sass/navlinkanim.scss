@@ -15,14 +15,15 @@ $blue-colour: #43aeff;
         &::before, &::after {
             position: absolute;
             width: 0;
+            height: 1px;
             left: 50%;
             pointer-events: none;
             opacity: 0.8;
-            background: $orange-colour;
+            background-color: $orange-colour;
             content: '';
-            -webkit-transition: 0.2s;
-	        -moz-transition: 0.2s;
-	        transition: 0.2s;
+            -webkit-transition: left 0.15s, width 0.15s;
+	        -moz-transition: left 0.15s, width 0.15s;
+	        transition: left 0.15s, width 0.15s;
         }
 
         &::before { top: calc(-5px); }
@@ -32,8 +33,6 @@ $blue-colour: #43aeff;
             color: $white-colour;
             
             &::before, &::after {
-                background: $orange-colour;
-                height: 1px;
                 width: 80%;
                 left: 9%;
             }
