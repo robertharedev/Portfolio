@@ -1,5 +1,5 @@
 $prim-colour: #111;
-$sec-colour: #43aeff;
+$blue-colour: #43aeff;
 $white-colour: #ececec;
 $orange-colour: #ffba24;
 $green-colour: #7dd46b;
@@ -39,7 +39,7 @@ a { font-size: 1.2vw; }
 p, label, input, textarea, button { font-size: 1.3vw; }
 input, textarea, button { font-family: 'Roboto Mono', monospace; }
 
-#codestyle-text1 { color: $sec-colour; }
+#codestyle-text1 { color: $blue-colour; }
 #codestyle-text2 { color: $green-colour; }
 #codestyle-text3 { color: $purple-colour; }
 #codestyle-text4 { color: $orange-colour; }
@@ -181,24 +181,42 @@ body {
         .grid-container {
             display: grid;
             grid-template-columns: repeat(3, minmax(310px, 1fr));
-            gap: 1.4vh;
+            gap: 3vh;
             max-width: 90%;
-
+            
             .grid-item {
-                text-align: center;
+                position: relative;
                 list-style: none;
-
-                :hover {
-                    
+                height: 300px;
+                width: 300px;
+                border-top: 5px solid $orange-colour;
+                border-left: 5px solid $orange-colour;
+            }
+                
+            a {
+                
+                &:hover {
+                    img { opacity: 0.15; }
+                    .proj-info-container { opacity: 1; }
                 }
                 
-                a {
-                    
-                    
-                    img {
-                        width: 300px;
-                        height: 300px;
-                    }
+                .proj-info-container {
+                    opacity: 0;
+                    position: absolute;
+                    top: 1.5vh;
+                    left: 1.5vh;
+                    transition: opacity 0.2s;
+
+                    h4 { font-style: italic; }
+                    .h4-blue { color: $blue-colour; }
+                    .h4-green { color: $green-colour; }
+                    p { color: $white-colour; font-size: 1.2vw; }
+                }
+                
+                img {
+                    width: 300px;
+                    height: 300px;
+                    transition: 0.2s;
                 }
             }
         }
@@ -509,10 +527,39 @@ body {
     @media screen and (max-width: 50em) {
         .subheading-container { padding: 0 5vw !important; } // make subheading box wider (!important means override what's above)
         .main-wrapper .heading-section .heading-container #nameLogo .secondword, // don't know why i cant make this shorter...
-        .main-wrapper .heading-section .heading-container #nameLogo .firstword { // or this...
-            stroke-width: 4px;
-        }
+        .main-wrapper .heading-section .heading-container #nameLogo .firstword { stroke-width: 4px; } // or this...
         .main-wrapper #scroll-symbol-container { padding: 0 0 10vh 0 !important; }
+
+        .projects-wrapper {
+            width: 100%;
+            .grid-container {
+                width: 100%;
+
+                .grid-item {
+                    width: 100%;
+                    height: auto !important;
+                    
+                    a {
+                        &:hover { img { opacity: 1 !important; } }
+
+                        img {
+                            width: 40%;
+                            height: 100%;
+                        }
+
+                        .proj-info-container {
+                            opacity: 1;
+                            height: 100%;
+                            top: 0;
+                            left: 42%;
+
+                            h4 { font-size: 4vw; }
+                            p { font-size: 2.9vw; }
+                        }
+                    }
+                }
+            }   
+        }
 
         // change formatting of image and text in about me section
         .about-me-wrapper #about-me-section-content {
