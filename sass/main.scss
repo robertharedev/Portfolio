@@ -203,8 +203,9 @@ body {
                 .proj-info-container {
                     opacity: 0;
                     position: absolute;
-                    top: 1.5vh;
-                    left: 1.5vh;
+                    top: 0;
+                    left: 0;
+                    padding: 1.5vh;
                     transition: opacity 0.2s;
 
                     h4 { font-style: italic; }
@@ -550,8 +551,9 @@ body {
                         .proj-info-container {
                             opacity: 1;
                             height: 100%;
-                            top: 0;
                             left: 42%;
+                            top: 2%;
+                            padding: 0;
 
                             h4 { font-size: 4vw; }
                             p { font-size: 2.9vw; }
