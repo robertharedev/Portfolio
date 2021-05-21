@@ -398,18 +398,18 @@ body {
                     transform: translateY(-50%);
                     border-radius: 50%;
                     border: 2px solid #555;
-                    -webkit-transition: 0.1s ease-in-out;
-                    -moz-transition: 0.1s ease-in-out;
-                    -o-transition: 0.1s ease-in-out;
-                    transition: 0.1s ease-in-out;
+                    -webkit-transition: 0.05s ease-in-out;
+                    -moz-transition: 0.05s ease-in-out;
+                    -o-transition: 0.05s ease-in-out;
+                    transition: 0.05s ease-in-out;
 
                     &:hover {
-                        border: 2px solid $white-colour;
+                        border: 2px solid $white-colour !important; // importabt so it overrides the js
                     }
 
                     &:active {
-                        border: 2px solid $white-colour;
-                        background-color: $white-colour;
+                        border: 2px solid $white-colour !important; // importabt so it overrides the js
+                        background-color: $white-colour !important; // importabt so it overrides the js
                     }
                 }
             }

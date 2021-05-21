@@ -352,17 +352,17 @@ body #nav-dot-container ul li a {
   transform: translateY(-50%);
   border-radius: 50%;
   border: 2px solid #555;
-  -webkit-transition: 0.1s ease-in-out;
-  -moz-transition: 0.1s ease-in-out;
-  -o-transition: 0.1s ease-in-out;
-  transition: 0.1s ease-in-out;
+  -webkit-transition: 0.05s ease-in-out;
+  -moz-transition: 0.05s ease-in-out;
+  -o-transition: 0.05s ease-in-out;
+  transition: 0.05s ease-in-out;
 }
 body #nav-dot-container ul li a:hover {
-  border: 2px solid #ececec;
+  border: 2px solid #ececec !important;
 }
 body #nav-dot-container ul li a:active {
-  border: 2px solid #ececec;
-  background-color: #ececec;
+  border: 2px solid #ececec !important;
+  background-color: #ececec !important;
 }
 body #to-top-link {
   display: none;
