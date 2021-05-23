@@ -173,8 +173,23 @@ body .projects-wrapper .grid-container .grid-item {
   list-style: none;
   height: 300px;
   width: 300px;
-  border-top: 5px solid #ffba24;
-  border-left: 5px solid #ffba24;
+  border-radius: 5px;
+  transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+}
+body .projects-wrapper .grid-container .grid-item:hover {
+  transform: translate3d(8px, -8px, 0);
+  box-shadow: #ffba24 -1px 1px, #ffba24 -2px 2px, #ffba24 -3px 3px, #ffba24 -4px 4px, #ffba24 -5px 5px, #ffba24 -6px 6px, #ffba24 -7px 7px, #ffba24 -8px 8px;
+  transition-property: all;
+  transition-timing-function: line;
+  border: #ffba24 solid 1px;
+}
+body .projects-wrapper .grid-container .grid-item:active {
+  transition: transform 0.1s;
+  transform: translate3d(0px, 0px, 0);
+  box-shadow: none;
+  transition-property: all;
+  transition-timing-function: line;
+  border: #ffba24 solid 1px;
 }
 body .projects-wrapper .grid-container a:hover img {
   opacity: 0.15;
@@ -207,6 +222,7 @@ body .projects-wrapper .grid-container a img {
   width: 300px;
   height: 300px;
   transition: 0.2s;
+  border-radius: 5px;
 }
 body .about-me-wrapper {
   display: inline-block;

@@ -64,7 +64,7 @@ function getCurrentDot() {
         return navDotHome;
     } else if (midScrollY >= projTopDist && midScrollY < aboutTopDist) {
         return navDotProj;
-    } else if (midScrollY >= aboutTopDist && midScrollY - 400 < contactTopDist) { // (hacky fix) -400 because the contact dot changed too early in the scroll so this offsets it a bit
+    } else if (midScrollY >= aboutTopDist && midScrollY - 400 < contactTopDist) { // (hacky fix) -400 because the contact dot is highlighted a bit early in the scroll so this offsets it a bit
         return navDotAbout;
     } else if (midScrollY - 400 >= contactTopDist) {
         return navDotContact;
@@ -72,17 +72,14 @@ function getCurrentDot() {
 }
 
 window.addEventListener("scroll", function() {
-    if (document.readyState !== "loading") {
-
-        // unfills all dots
-        function unFill(dot) {
-            dot.style.backgroundColor = "#111111";
-            dot.style.borderColor = "#555555";
-        }
-        dots.forEach(unFill);
-
-        // fills current dot
-        getCurrentDot().style.backgroundColor = "#ffba24";
-        getCurrentDot().style.borderColor = "#ffba24";
+    // unfills all dots
+    function unFill(dot) {
+        dot.style.backgroundColor = "#111111";
+        dot.style.borderColor = "#555555";
     }
+    dots.forEach(unFill);
+
+    // fills current dot
+    getCurrentDot().style.backgroundColor = "#ffba24";
+    getCurrentDot().style.borderColor = "#ffba24";
 });
