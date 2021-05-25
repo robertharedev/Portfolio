@@ -173,7 +173,6 @@ body .projects-wrapper .grid-container .grid-item {
   list-style: none;
   height: 300px;
   width: 300px;
-  border: #555 1px solid;
   border-radius: 5px;
   transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
 }
@@ -224,6 +223,7 @@ body .projects-wrapper .grid-container a img {
   width: 300px;
   height: 300px;
   transition: 0.2s;
+  border: #555 solid 1px;
   border-radius: 5px;
 }
 body .about-me-wrapper {

@@ -189,19 +189,18 @@ body {
                 list-style: none;
                 height: 300px;
                 width: 300px;
-                border: #555 1px solid;
                 border-radius: 5px;
                 transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
-            
+                
                 &:hover { // mostly for the 3d popout button effect
                     transform: translate3d(8px, -8px, 0);
                     box-shadow: $orange-colour -1px 1px, $orange-colour -2px 2px, $orange-colour -3px 3px, $orange-colour -4px 4px, 
-                                $orange-colour -5px 5px, $orange-colour -6px 6px, $orange-colour -7px 7px, $orange-colour -8px 8px;
+                    $orange-colour -5px 5px, $orange-colour -6px 6px, $orange-colour -7px 7px, $orange-colour -8px 8px;
                     transition-property: all;
                     transition-timing-function: line;
                     border: $orange-colour solid 1px;
                 }
-
+                
                 &:active {
                     transition: transform 0.1s; // presses down faster on click than it pops up on hover
                     transform: translate3d(0px, 0px, 0);
@@ -238,6 +237,7 @@ body {
                     width: 300px;
                     height: 300px;
                     transition: 0.2s;
+                    border: #555 solid 1px;
                     border-radius: 5px;
                 }
             }
