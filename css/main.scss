@@ -39,10 +39,10 @@ a { font-size: 1.2vw; }
 p, label, input, textarea, button { font-size: 1.3vw; }
 input, textarea, button { font-family: 'Roboto Mono', monospace; }
 
-#codestyle-text1 { color: $blue-colour; }
-#codestyle-text2 { color: $green-colour; }
-#codestyle-text3 { color: $purple-colour; }
-#codestyle-text4 { color: $orange-colour; }
+#codestyle-text1 { font-weight: 800; color: $blue-colour; }
+#codestyle-text2 { font-weight: 800; color: $green-colour; }
+#codestyle-text3 { font-weight: 800; color: $purple-colour; }
+#codestyle-text4 { font-weight: 800; color: $orange-colour; }
 
 body {
     display: flex;              // this stuff allows me to create sections on top of each other that have centered content
@@ -271,8 +271,8 @@ body {
                 right: 0;
                 width: 50%;
                 padding: 20px;
-                border-top: 1px solid $white-colour;
-                border-bottom: 1px solid $white-colour;
+                background-color: rgba(0,0,0,0.5);
+                border-radius: 5px;
             }
         }
     }
